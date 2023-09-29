@@ -191,16 +191,58 @@ body{
 }
 
 .main__offer{
-    width: 60%;
-    height: 25%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10% 20%;
-    justify-content: space-between;
+    width: 80%;
+    height: 175px;
+    margin: 10% 10%;
+    padding: 3%;
 }
 
-.main__offer .offer__model{
+.main__offer-basic:hover{
+    box-shadow: 5px 10px 27px 0px $offer-basic-color;
+    transform: scale(1.1, 1.1);
+    transition: transform 1s;
+}
 
+.main__offer-pro:hover{
+    box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.29);
+    transform: scale(1.1, 1.1);
+    transition: transform 1s;
+}
+
+.main__offer-premium:hover{
+    box-shadow: 5px 10px 27px 0px $offer-premium-color;
+    transform: scale(1.1, 1.1);
+    transition: transform 1s;
+}
+
+.offer__model, .offer__adventages{
+    display: inline;
+}
+
+.offer__model{
+    float: left;
+    height: 50%;
+    position: relative;
+    top: 30%;
+    left: 5%;
+}
+
+.offer__adventages{
+    float: right;
+    text-align: left;
+}
+
+.adventage{
+    position: relative;
+    top: 30%;
+    margin: 5%;
+}
+
+.offer__title{
+    font-family: $family-raleway;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
 }
 
 .main__offer-basic{
