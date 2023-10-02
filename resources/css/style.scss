@@ -140,10 +140,17 @@ body{
 
 .data__ellipse{
     flex-shrink: 0;
+    position: absolute;
 }
 
 .data__icon{
     flex-shrink: 0;
+    position: relative;
+    left: 15%;
+}
+
+.data__icon-eye{
+    left: 10%;
 }
 
 .data__number{
@@ -154,6 +161,7 @@ body{
     letter-spacing: 6px;
     width: 80%;
     margin: auto;
+    margin-top: 10%;
 }
 
 .data__desc{
