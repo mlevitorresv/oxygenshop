@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../resources/css/style.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <title>OXYGENShop</title>
 </head>
 <body>
     <div id="header">
         <div class="header__nav">
             <h1 class="header__title">OXYGENShop</h1>
-            <i class="fi fi-rr-menu-burger header__icon"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none" class="header__icon">
+                <rect y="10" width="20" height="2" fill="#07ACE6"/>
+                <rect y="5" width="20" height="2" fill="#07ACE6"/>
+                <rect width="20" height="2" fill="#07ACE6"/>
+            </svg>
             <ul class="header__list">
                 <a href="#" class="header__element">WHY US</a>
                 <a href="#" class="header__element">BENEFITS</a>
@@ -35,7 +38,7 @@
         <h3 class="main__title-popularity">The most popular sales platform in country</h3>
         <div class="main__data main__data-entries">
 
-            <svg class="data__ellipse-red" xmlns="http://www.w3.org/2000/svg" width="64" height="63" viewBox="0 0 64 63" fill="none">
+            <svg class="data__ellipse data__ellipse-red" xmlns="http://www.w3.org/2000/svg" width="64" height="63" viewBox="0 0 64 63" fill="none">
                 <circle cx="32.085" cy="31.355" r="31.355" fill="#FB3B64"/>
             </svg>
             <svg class="data__icon" xmlns="http://www.w3.org/2000/svg" width="44" height="52" viewBox="0 0 44 52" fill="none">
@@ -56,7 +59,7 @@
 
         <div class="main__data main__data-seen">
 
-            <svg class="data__ellipse-blue" xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63" fill="none">
+            <svg class="data__ellipse data__ellipse-blue" xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63" fill="none">
                 <circle cx="31.5" cy="31.5" r="31.5" fill="#08A6E4"/>
             </svg>
 
@@ -79,7 +82,7 @@
 
         <div class="main__data main__data-posts">
 
-            <svg class="data__ellipse-green" xmlns="http://www.w3.org/2000/svg" width="64" height="63" viewBox="0 0 64 63" fill="none">
+            <svg class="data__ellipse data__ellipse-green" xmlns="http://www.w3.org/2000/svg" width="64" height="63" viewBox="0 0 64 63" fill="none">
                 <circle cx="32.015" cy="31.355" r="31.355" fill="#55DFB4"/>
             </svg>
             <svg class="data__icon" xmlns="http://www.w3.org/2000/svg" width="52" height="48" viewBox="0 0 52 48" fill="none">
@@ -322,6 +325,31 @@
     </div>
 
     <div id="footer">
+        <h4 class="footer__title">OXYGENShop</h4>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="footer__icon footer__icon-twitter">
+            <g clip-path="url(#clip0_4_870)">
+              <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#3B5998"/>
+              <path d="M15.0881 12.4799H12.9021V20.2379H9.59111V12.4799H8.01611V9.75386H9.59111V7.98886C9.56186 7.5472 9.62909 7.10446 9.78814 6.69139C9.94719 6.27831 10.1942 5.90481 10.5121 5.59681C10.83 5.2888 11.2112 5.05368 11.6291 4.90778C12.0469 4.76187 12.4916 4.70867 12.9321 4.75187L15.3851 4.76187V7.40886H13.6051C13.5079 7.40287 13.4105 7.41834 13.3199 7.45419C13.2293 7.49003 13.1478 7.54537 13.0809 7.61628C13.0141 7.68719 12.9638 7.77193 12.9334 7.86449C12.903 7.95705 12.8933 8.05516 12.9051 8.15187V9.75187H15.3801L15.0881 12.4799Z" fill="white"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_4_870">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="footer__icon footer__icon-twitter">
+            <g clip-path="url(#clip0_4_866)">
+              <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#55ACEE"/>
+              <path d="M18.9969 8.07207C18.4727 8.30444 17.9165 8.45681 17.3469 8.52407C17.9468 8.16523 18.3957 7.60046 18.6099 6.93507C18.0463 7.27074 17.4294 7.50749 16.7859 7.63507C16.3523 7.17799 15.7806 6.87601 15.1586 6.77555C14.5366 6.6751 13.8989 6.78173 13.3434 7.07906C12.7879 7.37639 12.3455 7.84795 12.0842 8.42123C11.8229 8.99451 11.7571 9.63776 11.8969 10.2521C10.755 10.1951 9.63778 9.89855 8.61788 9.38171C7.59797 8.86486 6.69819 8.13928 5.97695 7.25207C5.60953 7.88446 5.49695 8.63311 5.66211 9.3456C5.82727 10.0581 6.25777 10.6808 6.86595 11.0871C6.41006 11.0727 5.96426 10.9493 5.56595 10.7271C5.56595 10.7391 5.56595 10.7511 5.56595 10.7631C5.56597 11.4256 5.79492 12.0678 6.21405 12.581C6.63317 13.0942 7.21673 13.4467 7.86595 13.5791C7.44208 13.6946 6.99743 13.7117 6.56595 13.6291C6.74934 14.1998 7.10656 14.699 7.58763 15.0567C8.0687 15.4144 8.64956 15.6128 9.24895 15.6241C8.04364 16.5651 6.51547 16.9921 4.99695 16.8121C6.23148 17.6032 7.65622 18.0474 9.12161 18.0981C10.587 18.1488 12.039 17.8041 13.3253 17.1001C14.6115 16.3962 15.6846 15.359 16.4318 14.0974C17.179 12.8358 17.5728 11.3963 17.5719 9.93007C17.5719 9.80607 17.5719 9.68207 17.5639 9.55907C18.1264 9.15272 18.6117 8.64914 18.9969 8.07207Z" fill="#F1F2F2"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_4_866">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        <p class="footer__rights">&copy; 2022 OXYGEN, All Rights Reserved</p>
     </div>
 </body>
 </html>
