@@ -4,6 +4,7 @@ $color-web: #08A6E4;
 $offer-basic-color: #FB3B64;
 $offer-pro-color: #07ACE6;
 $offer-premium-color: #55DFB4;
+$contact-p-color: #A5A5A5;
 $display-line-block: inline-block;
 $family-raleway: 'Raleway';
 $family-open-sans: 'Open Sans';
@@ -41,9 +42,10 @@ body{
 }
 
 .header__icon{
-    width: 7%;
-    height: 7%;
+    width: 10%;
+    height: 10%;
     float: right;
+    margin: 5% auto;
 }
 
 .header__list{
@@ -190,11 +192,22 @@ body{
     margin: 5%;
 }
 
+.main__title-pricing{
+    font-family: $family-raleway;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5%;
+}
+
 .main__offer{
-    width: 80%;
+    width: 75%;
+    max-width: 320px;
+    min-width: 275px;
     height: 175px;
-    margin: 10% 10%;
-    padding: 3%;
+    margin: 10% 15%;
+    padding: 2% 3%;
 }
 
 .main__offer-basic:hover{
@@ -223,8 +236,28 @@ body{
     float: left;
     height: 50%;
     position: relative;
-    top: 30%;
+    top: 15%;
     left: 5%;
+}
+
+.offer__price{
+    font-family: $family-open-sans;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+}
+
+.offer__price-basic{
+    color: $offer-basic-color;
+}
+
+.offer__price-pro{
+    color: $offer-pro-color;
+}
+
+.offer__price-premium{
+    color: $offer-premium-color;
 }
 
 .offer__adventages{
@@ -243,6 +276,7 @@ body{
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
+    font-style: normal;
 }
 
 .main__offer-basic{
@@ -258,4 +292,117 @@ body{
 .main__offer-premium{
     border: 1px solid $offer-premium-color;
     border-radius: 18px;
+}
+
+.offer__button{
+    width: 40%;
+    height: 20%;
+    border: none;
+    border-radius: 23px;
+    position: relative;
+    top: 45%;
+    left: 25%;
+
+    font-family: $family-open-sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: white;
+}
+
+.offer__button-basic{
+    background-color: $offer-basic-color;
+}
+
+.offer__button-pro{
+    background-color: $offer-pro-color;
+}
+
+.offer__button-premium{
+    background-color: $offer-premium-color;
+}
+
+.main__contact-title{
+    font-family: $family-raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    float: left;
+    margin-left: 15%;
+}
+
+.main__contact-desc{
+    font-family: $family-open-sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    float: left;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+
+.main__contact-forms{
+    color: $contact-p-color;
+    font-family: $family-open-sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    display: block;
+    float: left;
+    margin-left: 15%;
+}
+
+.main__contact-forms-tel{
+    margin-bottom: 15%;
+}
+
+.main__contact-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 70%;
+    margin: 15%;
+    
+    color: $color-web;
+    font-family: $family-open-sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3px;
+}
+
+.main__data-input{
+    border: none;
+    border-bottom: 1px solid #95989A;
+    width: 100%;
+}
+
+.main__consent-check{
+    border-radius: 4px;
+    border: 1px solid #95989A;
+    margin-right: 2%;
+}
+
+.main__consent-desc{
+    display: inline-block;
+    width: 70%;
+    color: #707070;
+    font-family: $family-open-sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    border: 1px solid black;
+}
+
+.main__consent-send{
+    display: block;
 }
