@@ -16,10 +16,10 @@
                 <rect width="20" height="2" fill="#07ACE6"/>
             </svg>
             <ul class="header__list">
-                <a href="#" class="header__element">WHY US</a>
-                <a href="#" class="header__element">BENEFITS</a>
-                <a href="#" class="header__element">PRICES</a>
-                <a href="#" class="header__element">CONTACT</a>
+                <li><a href="#" class="header__element">WHY US</a></li>
+                <li><a href="#" class="header__element">BENEFITS</a></li>
+                <li><a href="#" class="header__element">PRICES</a></li>
+                <li><a href="#" class="header__element">CONTACT</a></li>
             </ul>
         </div>
     </div>
@@ -105,10 +105,10 @@
 
         <div class="main__articles">
             <div class="main__article main__article-always">
-                <svg xmlns="http://www.w3.org/2000/svg" width="129" height="128" viewBox="0 0 129 128" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="129" height="128" viewBox="0 0 129 128" fill="none" class="article__svg article__always-svg">
                     <rect x="0.780029" y="63.7245" width="90.12" height="90.12" rx="41" transform="rotate(-45 0.780029 63.7245)" fill="#FB3B64"/>
                 </svg>
-                <img src="../resources/media/images/Macbook.png" alt="Macbook">
+                <img src="../resources/media/images/Macbook.png" alt="Macbook" class="article__img article__always-img">
                 <h3 class="article__title">Be always first</h3>
                 <p class="article__desc">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -117,10 +117,10 @@
                 </p>
             </div>
             <div class="main__article main__article-shop">
-                <svg xmlns="http://www.w3.org/2000/svg" width="132" height="132" viewBox="0 0 132 132" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="132" height="132" viewBox="0 0 132 132" fill="none" class="article__svg article__shop-svg">
                     <ellipse cx="65.94" cy="65.85" rx="65.94" ry="65.85" fill="#08A6E4"/>
                 </svg>
-                <img src="../resources/media/images/iPhone.png" alt="iphone">
+                <img src="../resources/media/images/iPhone.png" alt="iphone" class="article__img article__shop-img">
                 <h3 class="article__title">Your shop is where you are</h3>
                 <p class="article__desc">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -135,7 +135,7 @@
                     sed do eiusmod tempor incididunt ut labore et dolore magna 
                     aliqua. Ut enim ad minim veniam.
                 </p>
-                <img src="../resources/media/images/Trumpet.png" alt="trumpet">
+                <img src="../resources/media/images/Trumpet.png" alt="trumpet" class="article__img article__recognition-img">
             </div>
         </div>
 
@@ -170,12 +170,16 @@
                 <p class="adventage adventage__license">
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                         <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#EB476E"/>
+                        <line x1="3" y1="8" x2="8" y2="3" stroke="#EB476E" stroke-width="1" />
+                        <line x1="3" y1="3" x2="8" y2="8" stroke="#EB476E" stroke-width="1" />
                     </svg>
                     Two years license
                 </p>
                 <p class="adventage adventage__support">
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                         <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#EB476E"/>
+                        <line x1="3" y1="8" x2="8" y2="3" stroke="#EB476E" stroke-width="1" />
+                        <line x1="3" y1="3" x2="8" y2="8" stroke="#EB476E" stroke-width="1" />
                     </svg>
                     Full support
                 </p>
@@ -221,6 +225,8 @@
                 <p class="adventage adventage__support">
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                         <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#EB476E"/>
+                        <line x1="3" y1="8" x2="8" y2="3" stroke="#EB476E" stroke-width="1" />
+                        <line x1="3" y1="3" x2="8" y2="8" stroke="#EB476E" stroke-width="1" />
                     </svg>
                     Full support
                 </p>
@@ -310,8 +316,9 @@
             <input type="text" class="main__data-input main__data-input-email" id="email">
         </div>
 
+        
+        <input type="checkbox" class="main__consent-check" id="consent-check">
         <p class="main__consent-desc">
-            <input type="checkbox" class="main__consent-check" id="consent-check">
             <label for="consent-check" class="main__consent-content">
                 I hereby give consent for my personal data included in my application to be p
                 rocessed for the purposes of the recruitment process under the European 

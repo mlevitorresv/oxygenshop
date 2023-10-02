@@ -34,13 +34,16 @@ body {
 .header__icon {
   width: 5%;
   height: 5%;
+  margin-top: 5%;
   float: right;
   flex-shrink: 0;
 }
 
 .header__list {
-  list-style: none;
   display: none;
+  position: absolute;
+  list-style: none;
+  z-index: 100;
 }
 
 .header__element {
@@ -121,6 +124,8 @@ body {
 
 .main__data {
   width: 50%;
+  min-width: 160px;
+  max-width: 260px;
   height: 15%;
   margin: 5% 25%;
 }
@@ -166,14 +171,17 @@ body {
   width: 100%;
   height: 50%;
   background-color: #F7F7F7;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 5%;
   flex-shrink: 0;
+  align-items: center;
 }
 
 .main__article {
   width: 90%;
+  min-width: 310px;
+  max-width: 418px;
   margin: 5%;
+  padding-bottom: 0;
   height: 30%;
   background-color: white;
   border: 1px solid #E8E9ED;
@@ -195,6 +203,41 @@ body {
   font-weight: 400;
   line-height: 19px;
   margin: 5%;
+}
+
+.article__recognition-img {
+  width: 100%;
+  height: auto;
+  background-color: #55DFB4;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+}
+
+.article__svg {
+  position: absolute;
+}
+
+.article__always-svg {
+  margin-left: 40%;
+}
+
+.article__shop-svg {
+  margin-top: 3%;
+  margin-left: 25%;
+}
+
+.article__img {
+  position: relative;
+}
+
+.article__always-img {
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+.article__shop-img {
+  margin-top: 5%;
+  margin-left: 30%;
 }
 
 .main__title-pricing {
@@ -329,6 +372,31 @@ body {
   background-color: #55DFB4;
 }
 
+.offer__limited {
+  font-family: "Raleway";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main__contact-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  width: 80%;
+  margin: 10%;
+  color: #08A6E4;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 3px;
+}
+
 .main__contact-title {
   font-family: "Raleway";
   font-size: 40px;
@@ -366,23 +434,6 @@ body {
   margin-bottom: 15%;
 }
 
-.main__contact-data {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-  width: 70%;
-  margin: 15%;
-  color: #08A6E4;
-  font-family: "Open Sans";
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 3px;
-}
-
 .main__data-input {
   border: none;
   border-bottom: 1px solid #95989A;
@@ -390,6 +441,8 @@ body {
 }
 
 .main__consent-check {
+  position: absolute;
+  left: 15%;
   border-radius: 4px;
   border: 1px solid #95989A;
   margin-right: 2%;
@@ -406,6 +459,7 @@ body {
   font-weight: 400;
   line-height: normal;
   text-align: left;
+  margin-left: 10%;
 }
 
 .main__consent-send {
@@ -417,7 +471,8 @@ body {
   border-radius: 35px;
   background-color: #08A6E4;
   box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.29);
-  margin: 10% 15%;
+  margin-top: 10%;
+  margin-right: 10%;
   padding: 3%;
   color: white;
   font-family: "Open Sans";
