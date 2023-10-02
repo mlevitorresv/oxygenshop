@@ -54,9 +54,6 @@ body{
 //lista de menu
 .header__list{
     display: none;
-    position: absolute;
-    list-style: none;
-    z-index: 100;
 }
 
 
@@ -85,7 +82,7 @@ body{
     font-family: $family-raleway;
     font-size: 35px;
     font-weight: 400;
-    line-height: 41.09px;
+    line-height: 41px;
 }
 
 .opening__section-desc{
@@ -431,6 +428,8 @@ body{
     font-weight: 400;
     line-height: 22px;
     float: left;
+    width: 75%;
+    text-align: left;
     margin-left: 15%;
     margin-bottom: 10%;
 }
@@ -445,6 +444,8 @@ body{
     display: block;
     float: left;
     margin-left: 15%;
+    width: 75%;
+    text-align: left;
 }
 
 .main__contact-forms-tel{
@@ -537,4 +538,29 @@ body{
     margin-left: 5%;
     margin-top: 5%;
     flex-shrink: 0;
+}
+
+@media only screen and (min-width: 1000px){
+
+    .header__title{
+    display: $display-line-block;
+    margin: 1% 5%;
+    }
+
+    .header__icon{
+        display: none;
+    }
+
+    .header__list{
+        display: inline-block;
+    }
+
+    .opening__section-button-open-shop{
+        width: 25%;
+        border-radius: 40px;
+        box-shadow: 5px 10px 14px 0px #07ACE64A;
+
+        height: 30%;
+        padding: 5%;
+    }
 }
