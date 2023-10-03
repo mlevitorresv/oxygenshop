@@ -587,19 +587,33 @@ body {
     justify-content: space-between;
   }
   .main__article {
-    width: 70%;
+    width: 60%;
   }
   .main__article-always .article__title-always {
     display: inline;
     position: relative;
-    left: -38%;
+    right: 15em;
+    bottom: 5em;
   }
   .main__article-always .article__always-img {
     transform: scale(1.5, 1.5);
-    left: 50%;
+    left: 35em;
+    bottom: 2em;
   }
   .main__article-always .article__always-svg {
+    display: inline-block;
     transform: scale(1.5, 1.5);
+    position: absolute;
+    top: 111em;
+    left: 35em;
+  }
+  .main__article-always .article__desc-always {
+    display: inline-block;
+    position: relative;
+    right: 51em;
+    bottom: 2em;
+    margin: 1em;
+    width: 15em;
   }
   .main__offer {
     display: inline-flex;

@@ -629,23 +629,38 @@ body{
     }
 
     .main__article{
-        width: 70%;
+        width: 60%;
     }
 
     .main__article-always{
         .article__title-always{
             display: inline;
             position: relative;
-            left: -38%;
+            right: 15em;
+            bottom: 5em;
         };
 
         .article__always-img{
             transform: $scale-svg-img;
-            left: 50%;
+            left: 35em;
+            bottom: 2em;
         };
 
         .article__always-svg{
+            display: inline-block;
             transform: $scale-svg-img;
+            position: absolute;
+            top: 111em;
+            left: 35em;
+        };
+
+        .article__desc-always{
+            display: inline-block;
+            position: relative;
+            right: 51em;
+            bottom: 2em;
+            margin: 1em;
+            width: 15em;
         };
     }
 
