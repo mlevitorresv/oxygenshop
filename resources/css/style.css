@@ -648,6 +648,29 @@ body {
   .main__contact-forms-tel {
     margin-left: 2em;
   }
+  .main__contact-data {
+    display: inline-block;
+    width: auto;
+    position: relative;
+    top: -30em;
+    text-align: left;
+    margin-bottom: 1em;
+  }
+  .main__contact-data .main__data-input {
+    margin: 6% 0;
+    width: 89%;
+  }
+  .main__consent-check {
+    position: relative;
+    top: -20em;
+    left: -49em;
+  }
+  .main__consent-desc {
+    position: relative;
+    top: -27em;
+    left: 33%;
+    width: 17%;
+  }
   #footer {
     height: 8%;
     margin: 20% 0 0;
