@@ -246,8 +246,6 @@ body {
 
 .main__offer {
   width: 75%;
-  max-width: 320px;
-  min-width: 275px;
   height: 175px;
   margin: 10% 15%;
   padding: 2% 3%;
@@ -607,7 +605,7 @@ body {
     display: inline-flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 30%;
+    width: 21em;
     height: auto;
     padding-top: 2%;
     padding-bottom: 4%;
