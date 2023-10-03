@@ -603,9 +603,6 @@ body{
         padding-top: 1%;
         padding-bottom: 1%;
     }
-
-    //css para la img-background
-    //--------------------
     
 
     .main__title-popularity{
@@ -624,7 +621,7 @@ body{
         margin: 2% 2% 6%;
     }
 
-//CSS PARA LOS ARTICULOS QUE ME TIENEN CANSADO
+//ARTICLES
     .main__articles{
         display: flex;
         flex-direction: column;
@@ -657,7 +654,7 @@ body{
         display: inline-flex;
         flex-direction: row;
         justify-content: space-around;
-        width: 21em;
+        width: 24em;
         height: auto;
         padding-top: 2%;
         padding-bottom: 4%;
@@ -694,6 +691,12 @@ body{
 
         .offer__button{
             display: block;
+            position: relative;
+            top: 32em;
+            left: -6em;
+            width: 10em;
+            padding-top: 1em;
+            padding-bottom: 1em;
         }
     }
 
