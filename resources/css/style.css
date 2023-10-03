@@ -41,9 +41,6 @@ body {
 
 .header__list {
   display: none;
-  position: absolute;
-  list-style: none;
-  z-index: 100;
 }
 
 .header__element {
@@ -178,8 +175,6 @@ body {
 
 .main__article {
   width: 90%;
-  min-width: 310px;
-  max-width: 418px;
   margin: 5%;
   padding-bottom: 0;
   height: 30%;
@@ -533,12 +528,156 @@ body {
   .header__icon {
     display: none;
   }
+  .header__list {
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+    left: 13%;
+  }
+  .header__element {
+    display: inline-block;
+  }
+  .header__element-link {
+    text-decoration: none;
+    color: #A5A5A5;
+    font-family: "Open Sans";
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  .header__element-link:hover {
+    color: black;
+  }
+  .main__opening-section {
+    margin-bottom: 0.5%;
+  }
+  .opening__section-desc {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    width: 90%;
+    margin: 1% 5% 3%;
+    flex-shrink: 0;
+  }
   .opening__section-button-open-shop {
     width: 25%;
     border-radius: 40px;
     box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
-    height: 30%;
-    padding: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .main__title-popularity {
+    width: 70%;
+    margin: 0% 15%;
+    font-family: "Raleway";
+    line-height: 42px;
+    font-weight: 400;
+    font-size: 36px;
+    flex-shrink: 0;
+  }
+  .main__data {
+    display: inline-block;
+    width: 20%;
+    margin: 2% 2% 6%;
+  }
+  .main__articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main__article {
+    width: 70%;
+  }
+  .main__article-always .article__title-always {
+    display: inline;
+    position: relative;
+    left: -38%;
+  }
+  .main__article-always .article__always-img {
+    transform: scale(1.5, 1.5);
+    left: 50%;
+  }
+  .main__article-always .article__always-svg {
+    transform: scale(1.5, 1.5);
+  }
+  .main__offer {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    margin: 2.5%;
+  }
+  .main__offer .offer__title {
+    display: block;
+  }
+  .main__offer .offer__adventages {
+    height: auto;
+    justify-content: center;
+    margin-top: 60%;
+    margin-bottom: 30%;
+  }
+  .main__offer .offer__adventages .adventage {
+    width: 175%;
+  }
+  .main__offer .offer__button {
+    display: block;
+  }
+  .main__contact-title {
+    position: absolute;
+    left: 15%;
+    margin-top: 5%;
+    font-size: 49px;
+  }
+  .main__contact-desc {
+    position: relative;
+    top: 11em;
+    left: 15%;
+  }
+  .main__contact-forms {
+    display: inline;
+    position: relative;
+    left: 15%;
+    width: auto;
+  }
+  .main__contact-forms-tel {
+    margin-left: 2em;
+  }
+  #footer {
+    height: 8%;
+    margin: 20% 0 0;
+    padding: 1% 3%;
+  }
+  .footer__title {
+    display: inline-block;
+    color: #08A6E4;
+    font-family: "Raleway";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 1%;
+  }
+  .footer__rights {
+    color: #A5A5A5;
+    font-family: "Open Sans";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-content: center;
+    display: block;
+  }
+  .footer__icon {
+    float: right;
+    margin-left: 2%;
+    margin-top: 1.5%;
+    flex-shrink: 0;
   }
 }
 
