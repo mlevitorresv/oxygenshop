@@ -11,6 +11,7 @@ $family-open-sans: 'Open Sans';
 $blue-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.29);
 $scale-svg-img-1-5: scale(1.5, 1.5);
 $scale-svg-img-2: scale(2, 2);
+$scale-offer: scale(1.1, 1.1);
 
 *{
     box-sizing: border-box;
@@ -138,25 +139,36 @@ body{
 
 .main__data{
     width: 50%;
-    min-width: 160px;
-    max-width: 260px;
     height: 15%;
-    margin: 5% 25%;
+    margin: 5% auto;
+    text-align: center;
 }
 
 .data__ellipse{
     flex-shrink: 0;
-    position: absolute;
+    position: relative;
 }
 
 .data__icon{
     flex-shrink: 0;
-    position: relative;
-    left: 15%;
+    z-index: 1;
+}
+
+.data__icon-person{
+    position: absolute;
+    right: 43%;
 }
 
 .data__icon-eye{
-    left: 10%;
+    position: absolute;
+    top: 100%;
+    right: 40%;
+}
+
+.data__icon-catalog{
+    position: absolute;
+    top: 120%;
+    right: 40%;
 }
 
 .data__number{
@@ -188,13 +200,12 @@ body{
     padding: 5%;
     flex-shrink: 0;
     align-items: center;
+    margin-top: 20%;
 }
 
 .main__article{
     width: 90%;
-    // min-width: 310px;
-    // max-width: 418px;
-    margin: 5%;
+    margin: 5% 5% 0;
     padding-bottom: 0;
     height: 30%;
     background-color: white;
@@ -205,10 +216,10 @@ body{
 
 .article__title{
     width: 80%;
-    font-family: $family-raleway;
+    font-family: "Raleway";
     font-size: 30px;
     font-weight: 400;
-    margin: 5%;
+    margin: 8% 4% 4%;;
 }
 
 .article__desc{
@@ -220,39 +231,43 @@ body{
 }
 
 .article__recognition-img{
-    width: 100%;
+    width: 90%;
+    margin: 0 5% 12%;
+    padding: 12% 16% 0 4%;;
     height: auto;
     background-color: #55DFB4;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
 }
 
-.article__svg{
-    position: absolute;
-}
-
-.article__always-svg{
-    margin-left: 40%;
-}
-
-.article__shop-svg{
-    margin-top: 3%;
-    margin-left: 25%;
-}
-
-.article__img{
+.article__ellipse{
     position: relative;
 }
 
+.article__always-ellipse{
+    margin-left: 60%;
+}
+
+.article__shop-ellipse{
+    margin-top: 3%;
+    margin-left: 30%;
+}
+
 .article__always-img{
-    margin-top: 10%;
-    margin-left: 20%;
+    position: absolute;
+    z-index: 1;
+    top: 160%;
+    right: 23%;
 }
 
 .article__shop-img{
-    margin-top: 5%;
-    margin-left: 30%;
+        position: absolute;
+        z-index: 1;
+        top: 197%;
+        right: 35%;
 }
+
+
 
 .main__title-pricing{
     font-family: $family-raleway;
@@ -264,30 +279,30 @@ body{
 }
 
 .main__offer{
-    width: 75%;
-    // max-width: 320px;
-    // min-width: 275px;
+    width: 275px;
     height: 175px;
     margin: 10% 15%;
     padding: 2% 3%;
     flex-shrink: 0;
+    position: relative;
+    
 }
 
 .main__offer-basic:hover{
     box-shadow: 5px 10px 27px 0px $offer-basic-color;
-    transform: scale(1.1, 1.1);
+    transform: $scale-offer;
     transition: transform 1s;
 }
 
 .main__offer-pro:hover{
     box-shadow: $blue-shadow;
-    transform: scale(1.1, 1.1);
+    transform: $scale-offer;
     transition: transform 1s;
 }
 
 .main__offer-premium:hover{
     box-shadow: 5px 10px 27px 0px $offer-premium-color;
-    transform: scale(1.1, 1.1);
+    transform: $scale-offer;
     transition: transform 1s;
 }
 
@@ -297,10 +312,6 @@ body{
 
 .offer__model{
     float: left;
-    height: 50%;
-    position: relative;
-    top: 15%;
-    left: 5%;
 }
 
 .offer__price{
@@ -345,46 +356,101 @@ body{
 .main__offer-basic{
     border: 1px solid $offer-basic-color;
     border-radius: 18px;
+    height: 220px;
+    .offer__adventages{
+        width: 60%;
+    }
+
+    .adventage{
+        margin-top: 10%;
+    }
+
+    .offer__model{
+        margin-left: 8%;
+        margin-top: 20%;
+    }
+
+    .offer__button-basic{
+        background-color: $offer-basic-color;
+        top: 92%;
+        left: 25%;
+    }
 }
 
 .main__offer-pro{
     border: 1px solid $offer-pro-color;
     border-radius: 18px;
+    height: 220px;
+
+    .offer__adventages{
+        position: relative;
+        width: 60%;
+        bottom: 70%;
+        left: 6%;
+    }
+
+    .offer__model{
+        margin-left: .5%;
+        margin-top: 20%;
+    }
+
+    .adventage{
+        position: relative;
+        top: 30%;
+        margin: 10% 5%;
+    }
+
+    .offer__button-pro{
+        background-color: $offer-pro-color;
+        top: 92%;
+        left: 25%;
+    }
 }
 
 .main__offer-premium{
     border: 1px solid $offer-premium-color;
     border-radius: 18px;
+    height: 220px;
+
+    .offer__adventages{
+        position: relative;
+        width: 60%;
+        bottom: 35%;
+        left: 6%;
+    }
+
+    .offer__model{
+        margin-left: .5%;
+        margin-top: 20%;
+    }
+
+    .adventage{
+        position: relative;
+        top: 30%;
+        margin: 10% 5%;
+    }
+
+    .offer__button-premium{
+        background-color: $offer-premium-color;
+        top: 92%;
+        left: 25%;
+    }
 }
 
 .offer__button{
-    width: 40%;
-    height: 20%;
+    width: 50%;
+    height: 17%;
     border: none;
     border-radius: 23px;
-    position: relative;
-    top: 45%;
-    left: 25%;
-    flex-shrink: 0;
+    position: absolute;
 
-    font-family: $family-open-sans;
+    align-content: center;
+    font-family: "Open Sans";
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     color: white;
-}
-
-.offer__button-basic{
-    background-color: $offer-basic-color;
-}
-
-.offer__button-pro{
-    background-color: $offer-pro-color;
-}
-
-.offer__button-premium{
-    background-color: $offer-premium-color;
 }
 
 .offer__limited{
@@ -462,24 +528,21 @@ body{
 
 .main__consent-check{
     position: absolute;
-    left: 15%;
+    left: 10%;
     border-radius: 4px;
     border: 1px solid #95989A;
-    margin-right: 2%;
-    flex-shrink: 0;
 }
 
-.main__consent-desc{
+.main__consent-content{
     display: inline-block;
     width: 70%;
     color: #707070;
-    font-family: $family-open-sans;
+    font-family: "Open Sans";
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align: left;
-    margin-left: 10%;
 }
 
 .main__consent-send{
@@ -542,9 +605,40 @@ body{
     flex-shrink: 0;
 }
 
+//MOBILE VERSION MAX AND MIN WIDTH
+@media only screen and (max-width: 1000px){
+    .main__data{  
+        max-width: 187.5px;
+    }
+    
+    .main__article{
+        max-width: 445px;
+    }
+
+    .main__offer{
+        max-width: 275;
+        .offer__adventages{
+            max-width: 145px;
+            min-width: 142px;
+        }
+    }
+
+    .article__recognition-img{
+        max-width: 445px;
+    }
+}
+
+
+//DESKTOP VERSION
 @media only screen and (min-width: 1000px){
 
     //HEADER
+
+    #header{
+        width: 100%;
+        min-width: 1533px;
+    }
+
     .header__title{
         display: $display-line-block;
         margin: 1% 5%;
@@ -617,9 +711,23 @@ body{
     }
 
     .main__data{
+        max-width: 330px;
         display: inline-block;
         width: 20%;
         margin: 2% 2% 6%;
+    }
+    .data__icon-person{
+        right: 64.3%;
+    }
+
+    .data__icon-eye {
+        top: 188%;
+        right: 48%;
+    }
+
+    .data__icon-catalog {
+        top: 187.56%;
+        right: 32.5%;
     }
 
 //ARTICLES
@@ -627,19 +735,22 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-top: 5%;
     }
 
     .main__article{
         width: 60%;
-        margin-bottom: .8em;
+        margin-bottom: 1%;
+        min-width: 1145px;
     }
 
     .main__article-always{
         .article__title-always{
             display: inline;
             position: relative;
-            right: 15em;
-            bottom: 5em;
+            right: 70%;
+            bottom: 2em;
+            margin-left: 4%
         };
 
         .article__always-img{
@@ -648,7 +759,7 @@ body{
             bottom: 2em;
         };
 
-        .article__always-svg{
+        .article__always-ellipse{
             display: inline-block;
             transform: $scale-svg-img-1-5;
             position: absolute;
@@ -659,10 +770,10 @@ body{
         .article__desc-always{
             display: inline-block;
             position: relative;
-            right: 51em;
-            bottom: 2em;
-            margin: 1em;
-            width: 15em;
+            left: 2%;
+            bottom: 3em;
+            margin: 1%;
+            width: 14%;
         };
     }
 
@@ -819,7 +930,7 @@ body{
 
     .main__contact-data{
         display: inline-block;
-        width: auto;
+        width: 452px;
         position: relative;
         top: -30em;
         text-align: left;
