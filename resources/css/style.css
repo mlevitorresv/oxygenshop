@@ -675,33 +675,33 @@ body {
   }
   .main__article {
     width: 60%;
+    height: 17em;
     margin-bottom: 1%;
     min-width: 1145px;
   }
   .main__article-always .article__title-always {
     display: inline;
     position: relative;
-    right: 70%;
     bottom: 2em;
     margin-left: 4%;
   }
   .main__article-always .article__always-img {
     transform: scale(1.5, 1.5);
-    left: 35em;
-    bottom: 2em;
+    right: 33%;
+    top: 337%;
   }
   .main__article-always .article__always-ellipse {
     display: inline-block;
     transform: scale(1.5, 1.5);
     position: absolute;
-    top: 111em;
-    left: 35em;
+    top: 327%;
+    right: 30%;
   }
   .main__article-always .article__desc-always {
     display: inline-block;
     position: relative;
-    left: 2%;
-    bottom: 3em;
+    top: 5em;
+    right: 22%;
     margin: 1%;
     width: 14%;
   }
