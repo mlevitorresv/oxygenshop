@@ -9,7 +9,8 @@ $display-line-block: inline-block;
 $family-raleway: 'Raleway';
 $family-open-sans: 'Open Sans';
 $blue-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.29);
-$scale-svg-img: scale(1.5, 1.5);
+$scale-svg-img-1-5: scale(1.5, 1.5);
+$scale-svg-img-2: scale(2, 2);
 
 *{
     box-sizing: border-box;
@@ -630,6 +631,7 @@ body{
 
     .main__article{
         width: 60%;
+        margin-bottom: .8em;
     }
 
     .main__article-always{
@@ -641,14 +643,14 @@ body{
         };
 
         .article__always-img{
-            transform: $scale-svg-img;
+            transform: $scale-svg-img-1-5;
             left: 35em;
             bottom: 2em;
         };
 
         .article__always-svg{
             display: inline-block;
-            transform: $scale-svg-img;
+            transform: $scale-svg-img-1-5;
             position: absolute;
             top: 111em;
             left: 35em;
@@ -661,6 +663,72 @@ body{
             bottom: 2em;
             margin: 1em;
             width: 15em;
+        };
+    }
+
+    .main__article-shop{
+        .article__title-shop{
+            display: inline-block;
+            position: relative;
+            left: 7em;
+            bottom: 2em;
+            width: 8em;
+        };
+
+        .article__shop-img{
+            transform: $scale-svg-img-2;
+            right: 11em;
+            top: 4em;
+        };
+
+        .article__shop-svg{
+            display: inline-block;
+            transform: $scale-svg-img-2;
+            position: absolute;
+            top: 134em;
+            left: 7em;
+        };
+
+        .article__desc-shop{
+            display: inline-block;
+            position: relative;
+            left: 55.5em;
+            bottom: 7em;
+            margin: 1em;
+            width: 23em;
+        };
+    }
+
+    .main__article-recognition{
+        background-color: #F7F7F7;
+        border: none;
+
+        .article__title-recognition{
+            display: inline-block;
+            width: 10em;
+            font-family: "Raleway";
+            font-size: 30px;
+            font-weight: 400;
+            margin: 2em 4em 1em;
+            background-color: white
+        };
+    
+        .article__desc-recognition{
+            display: inline-block;
+            position: relative;
+            right: 31em;
+            top: 7em;
+            margin: 1em;
+            width: 23em;
+            background-color: white
+        };
+    
+        .article__recognition-img{
+            display: inline-block;
+            position: relative;
+            left: 41.3em;
+            bottom: 6em;
+            width: 30em;
         };
     }
 
@@ -677,38 +745,47 @@ body{
 
         .offer__title{
             display: block;
-            // position: relative;
-            // left: 90%;
+            position: relative;
+            left: 4em;
         }
 
-        // .offer__price{
-        //     display: block;
-        //     position: relative;
-        //     left: 90%;
-        // }
+        .offer__price{
+            display: block;
+            position: relative;
+            left: 1.7em;
+        }
 
-        // .offer__limited{
-        //     display: block;
-        //     position: relative;
-        //     left: 90%;
-        // }
+        .offer__limited{
+            display: block;
+            position: relative;
+            left: 7em;
+        }
 
         .offer__adventages{
             height: auto;
-            justify-content: center;
-            margin-top: 60%;
-            margin-bottom: 30%;
+            position: relative;
+            text-align: center;
+            top: 6em;
+            margin-bottom: 8em;
 
             .adventage{
                 width: 175%;
             }
         }
 
+        .offer__adventages-pro{
+            right: 1.5em;
+        }
+
+        .offer__adventages-premium{
+            right: 1.3em;
+        }
+
         .offer__button{
             display: block;
             position: relative;
-            top: 32em;
-            left: -6em;
+            top: 24em;
+            left: -6.5em;
             width: 10em;
             padding-top: 1em;
             padding-bottom: 1em;
