@@ -81,6 +81,7 @@ body{
     text-align: center;
 }
 
+
 .opening__section-title{
     font-family: $family-raleway;
     font-size: 35px;
@@ -144,31 +145,30 @@ body{
     text-align: center;
 }
 
-.data__ellipse{
-    flex-shrink: 0;
+
+.main__data-imgs{
     position: relative;
 }
 
-.data__icon{
-    flex-shrink: 0;
-    z-index: 1;
+.data__ellipse{
+    position: relative;
 }
 
 .data__icon-person{
     position: absolute;
-    right: 43%;
+    right: 29%;
 }
 
 .data__icon-eye{
     position: absolute;
-    top: 100%;
-    right: 40%;
+    top: 20%;
+    right: 20%;
 }
 
 .data__icon-catalog{
     position: absolute;
-    top: 120%;
-    right: 40%;
+    top: 10%;
+    right: 22%;
 }
 
 .data__number{
@@ -195,19 +195,15 @@ body{
 
 .main__articles{
     width: 100%;
-    height: 50%;
     background-color: #F7F7F7;
-    padding: 5%;
-    flex-shrink: 0;
-    align-items: center;
+    padding: 10%;
     margin-top: 20%;
 }
 
 .main__article{
     width: 90%;
-    margin: 5% 5% 0;
+    margin: 5% auto 0;
     padding-bottom: 0;
-    height: 30%;
     background-color: white;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
@@ -230,11 +226,14 @@ body{
     margin: 5%;
 }
 
+.main__article-imgs{
+    position: relative;
+}
+
 .article__recognition-img{
     width: 90%;
-    margin: 0 5% 12%;
+    margin: 0 auto;
     padding: 12% 16% 0 4%;;
-    height: auto;
     background-color: #55DFB4;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
@@ -245,26 +244,26 @@ body{
 }
 
 .article__always-ellipse{
-    margin-left: 60%;
+    left: 50%;
 }
 
 .article__shop-ellipse{
-    margin-top: 3%;
-    margin-left: 30%;
+    margin-top: 5%;
+    left: 25%;
 }
 
 .article__always-img{
     position: absolute;
     z-index: 1;
-    top: 160%;
-    right: 23%;
+    top: 25%;
+    right: 15%;
 }
 
 .article__shop-img{
         position: absolute;
         z-index: 1;
-        top: 197%;
-        right: 35%;
+        top: 15%;
+        right: 10%;
 }
 
 
@@ -279,9 +278,7 @@ body{
 }
 
 .main__offer{
-    width: 275px;
-    height: 175px;
-    margin: 10% 15%;
+    margin: 10% auto;
     padding: 2% 3%;
     flex-shrink: 0;
     position: relative;
@@ -591,6 +588,8 @@ body{
 .footer__rights{
     color: $contact-p-color;
     font-family: $family-open-sans;
+    display: block;
+    margin-top: 2%;
     font-size: 11px;
     font-style: normal;
     font-weight: 400;
@@ -601,30 +600,30 @@ body{
 .footer__icon{
     float: right;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 1%;
     flex-shrink: 0;
 }
 
 //MOBILE VERSION MAX AND MIN WIDTH
 @media only screen and (max-width: 1000px){
+
     .main__data{  
         max-width: 187.5px;
     }
     
     .main__article{
-        max-width: 445px;
+        max-width: 305px;
+        //min-width: 377px;
     }
 
     .main__offer{
-        max-width: 275;
-        .offer__adventages{
-            max-width: 145px;
-            min-width: 142px;
-        }
+        max-width: 275px;
+        min-width: 245px;
+        
     }
 
     .article__recognition-img{
-        max-width: 445px;
+        max-width: 303px;
     }
 }
 
@@ -762,7 +761,6 @@ body{
         .article__always-ellipse{
             display: inline-block;
             transform: $scale-svg-img-1-5;
-            position: absolute;
             top: 327%;
             right: 30%;
         };
@@ -792,7 +790,7 @@ body{
             top: 4em;
         };
 
-        .article__shop-svg{
+        .article__shop-ellipse{
             display: inline-block;
             transform: $scale-svg-img-2;
             position: absolute;
