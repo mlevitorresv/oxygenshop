@@ -819,28 +819,32 @@ body{
         .article__title-recognition{
             display: inline-block;
             position: relative;
-            width: 10em;
+            width: 26%;
             font-family: "Raleway";
             font-size: 30px;
             font-weight: 400;
+            bottom: 10%;
         };
     
         .article__desc-recognition{
             display: inline-block;
             position: relative;
-            right: 31em;
-            top: 7em;
-            margin: 1em;
-            width: 23em;
-            background-color: white
+            right: 31.5%;
+            top: 25%;
+            margin: 1%;
+            width: 28%;
         };
     
         .article__recognition-img{
-            display: inline-block;
+            width: 40%;
+            height: 17em;
+            margin: 0 56.3%;
+            padding: 12% 16% 0 4%;
+            background-color: #55DFB4;
+            border: 1px solid #E8E9ED;
+            border-radius: 5px;
             position: relative;
-            left: 41.3em;
-            bottom: 6em;
-            width: 30em;
+            bottom: 17.8em;
         };
     }
 
@@ -849,62 +853,139 @@ body{
         display: inline-flex;
         flex-direction: row;
         justify-content: space-around;
-        width: 24em;
+        width: 18%;
         height: auto;
-        padding-top: 2%;
         padding-bottom: 4%;
         margin: 2.5%;
+    }
 
+    .main__offer-basic{
         .offer__title{
             display: block;
             position: relative;
-            left: 4em;
+            left: 190%;
+            bottom: 20%;
         }
 
         .offer__price{
             display: block;
             position: relative;
-            left: 1.7em;
-        }
-
-        .offer__limited{
-            display: block;
-            position: relative;
-            left: 7em;
+            left: 190%;
+            bottom: 20%;
         }
 
         .offer__adventages{
             height: auto;
             position: relative;
             text-align: center;
-            top: 6em;
-            margin-bottom: 8em;
+            top: 5em;
+            right: 40%;
+            margin-bottom: 40%;
 
             .adventage{
                 width: 175%;
             }
         }
 
-        .offer__adventages-pro{
-            right: 1.5em;
+        .offer__button{
+            display: block;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            height: 10%;
+            top: 95%;
         }
 
-        .offer__adventages-premium{
-            right: 1.3em;
+    }
+        
+    .main__offer-pro{
+        .offer__title{
+            display: block;
+            position: relative;
+            left: 80%;
+            bottom: 20%;
+        }
+
+        .offer__price{
+            display: block;
+            position: relative;
+            left: 80%;
+            bottom: 20%;
+        }
+
+        .offer__limited{
+            display: block;
+            position: relative;
+            left: 80%;
+            bottom: 20%;
+        }
+
+        .offer__adventages{
+            height: auto;
+            position: relative;
+            text-align: center;
+            top: 5em;
+            left: -45%;
+            margin-bottom: 38%;
+
+            .adventage{
+                width: 175%;
+            }
         }
 
         .offer__button{
             display: block;
-            position: relative;
-            top: 24em;
-            left: -6.5em;
-            width: 10em;
-            padding-top: 1em;
-            padding-bottom: 1em;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            height: 10%;
+            top: 95%;
         }
+
     }
 
+    .main__offer-premium{
+        .offer__title{
+            display: block;
+            position: relative;
+            left: 110%;
+            bottom: 20%;
+        }
 
+        .offer__price{
+            display: block;
+            position: relative;
+            left: 110%;
+            bottom: 20%;
+        }
+
+        .offer__limited{
+            display: block;
+            position: relative;
+            left: 110%;
+            bottom: 20%;
+        }
+
+        .offer__adventages{
+            height: auto;
+            position: relative;
+            text-align: center;
+            top: 5em;
+            left: -45%;
+            margin-bottom: 38%;
+
+            .adventage{
+                width: 175%;
+            }
+        }
+
+        .offer__button{
+            display: block;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            height: 10%;
+            top: 95%;
+        }
+
+    }
     //CONTACT
     .main__contact-title{
         position: absolute;
@@ -914,9 +995,8 @@ body{
     }
 
     .main__contact-desc{
-        position: relative;
-        top: 11em;
-        left: 15%;
+        display: inline-block;
+        margin: 10% 30% 1%;
     }
 
     .main__contact-forms{
@@ -931,22 +1011,20 @@ body{
 
     .main__contact-data{
         display: inline-block;
-        width: 452px;
+        width: 20%;
         position: relative;
-        top: -30em;
+        top: -34em;
         text-align: left;
         margin-bottom: 1em;
 
         .main__data-input{
-            margin: 6% 0;
+            margin: 8% 0;
             width: 89%;
         }
     }
 
     .main__consent-check{
-        position: relative;
-        top: -20em;
-        left: -49em;
+        margin: 3% 44%;
     }
 
     .main__consent-desc{
