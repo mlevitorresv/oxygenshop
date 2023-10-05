@@ -354,10 +354,10 @@ body {
   height: 220px;
 }
 .main__offer-pro .offer__adventages {
-  position: relative;
+  position: absolute;
   width: 60%;
-  bottom: 70%;
-  left: 6%;
+  left: 48%;
+  margin-left: 1%;
 }
 .main__offer-pro .offer__model {
   margin-left: 0.5%;
@@ -380,10 +380,9 @@ body {
   height: 220px;
 }
 .main__offer-premium .offer__adventages {
-  position: relative;
+  position: absolute;
   width: 60%;
-  bottom: 35%;
-  left: 6%;
+  left: 48%;
 }
 .main__offer-premium .offer__model {
   margin-left: 0.5%;

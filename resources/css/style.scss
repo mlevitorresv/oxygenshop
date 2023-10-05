@@ -380,10 +380,10 @@ body{
     height: 220px;
 
     .offer__adventages{
-        position: relative;
+        position: absolute;
         width: 60%;
-        bottom: 70%;
-        left: 6%;
+        left: 48%;
+        margin-left: 1%;
     }
 
     .offer__model{
@@ -410,10 +410,9 @@ body{
     height: 220px;
 
     .offer__adventages{
-        position: relative;
+        position: absolute;
         width: 60%;
-        bottom: 35%;
-        left: 6%;
+        left: 48%;
     }
 
     .offer__model{
