@@ -881,6 +881,7 @@ body {
   .main__contact-desc {
     display: inline-block;
     margin: 10% 30% 1%;
+    width: 20%;
   }
   .main__contact-forms {
     display: inline;
@@ -898,6 +899,7 @@ body {
     top: -34em;
     text-align: left;
     margin-bottom: 1em;
+    left: 8%;
   }
   .main__contact-data .main__data-input {
     margin: 8% 0;
@@ -911,6 +913,12 @@ body {
     bottom: 27em;
     left: 33em;
     width: 30em;
+  }
+  .main__consent-content {
+    position: relative;
+    bottom: 19.8em;
+    right: 21%;
+    width: 16%;
   }
   .main__consent-send {
     width: 20em;
@@ -943,6 +951,7 @@ body {
     line-height: normal;
     align-content: center;
     display: block;
+    margin-top: 0;
   }
   .footer__icon {
     float: right;
