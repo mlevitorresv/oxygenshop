@@ -226,6 +226,10 @@ body{
     margin: 5%;
 }
 
+.article__line{
+    display: none;
+}
+
 .main__article-imgs{
     position: relative;
 }
@@ -731,24 +735,32 @@ body{
 
 //ARTICLES
     .main__articles{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 5%;
+        display: grid;
+        grid-template-areas: 
+            "always always always"
+            "shop   shop   shop"
+            "recog  recog  img"
+            ;
+        gap: 2%;
+        margin-top: 5%;        
     }
 
     .main__article{
-        width: 60%;
-        height: 17em;
-        margin-bottom: 1%;
-        min-width: 1145px;
+        height: 100%;
+        min-width: 1308px;
+        max-width: 1353px;
+
+        .article__line{
+            display: block;
+        }
     }
 
     .main__article-always{
+        grid-area: always;
         .article__title-always{
             display: inline;
             position: relative;
-            bottom: 20%;
+            bottom: 30%;
             right: 10%;
         };
 
@@ -761,26 +773,34 @@ body{
         .article__always-img{
             transform: $scale-svg-img-1-5;
             left: 150%;
-            top: 40%;
+            top: 20%;
         };
 
         .article__always-ellipse{
             display: inline-block;
             transform: $scale-svg-img-1-5;
             left: 250%;
+            bottom: 1.5em;
         };
 
         .article__desc-always{
             display: inline-block;
             position: relative;
-            top: 30%;
-            right: 32%;
+            right: 29.5%;
             margin: 1%;
-            width: 14%;
+            width: 24%;
         };
+        .article__line{
+            border: 2px solid $offer-basic-color;
+            position: relative;
+            top: 5%;
+            width: 18%;
+            left: 4%;
+        }
     }
 
     .main__article-shop{
+        grid-area: shop;
         .article__title-shop{
             display: inline-block;
             position: relative;
@@ -791,8 +811,8 @@ body{
 
         .article__shop-img{
             transform: $scale-svg-img-1-5;
-            right: 73%;
-            top: 4em;
+            right: 75%;
+            top: 5em;
         };
 
         .article__shop-ellipse{
@@ -810,16 +830,27 @@ body{
             margin: 1%;
             width: 28%;
         };
+        .article__line{
+            border: 2px solid #07ACE6;
+            position: relative;
+            top: 5%;
+            width: 20%;
+            left: 64%;
+        
+        }
     }
 
     .main__article-recognition{
         display: inline-block;
-        width: 40%;
+        margin: 8% 7.5% 0;
+        min-width: 748px;
+        max-width: 800px;
+        grid-area: recog;
 
         .article__title-recognition{
             display: inline-block;
             position: relative;
-            width: 26%;
+            width: 35%;
             font-family: "Raleway";
             font-size: 30px;
             font-weight: 400;
@@ -829,24 +860,30 @@ body{
         .article__desc-recognition{
             display: inline-block;
             position: relative;
-            right: 31.5%;
+            right: 40%;
             top: 25%;
             margin: 1%;
-            width: 28%;
-        };
-    
-        .article__recognition-img{
             width: 40%;
-            height: 17em;
-            margin: 0 56.3%;
-            padding: 12% 16% 0 4%;
-            background-color: #55DFB4;
-            border: 1px solid #E8E9ED;
-            border-radius: 5px;
-            position: relative;
-            bottom: 17.8em;
         };
+        .article__line{
+            border: 2px solid $offer-premium-color;
+            position: relative;
+            top: 25%;
+            width: 30%;
+            left: 5%;
+        }
     }
+    .article__recognition-img{
+        max-width: 400px;
+        position: relative;
+        top: 28%;
+        right: 13%;
+        padding: 25% 16% 0 4%;
+        background-color: #55DFB4;
+        border: 1px solid #E8E9ED;
+        border-radius: 5px;
+        grid-area: img;
+    };
 
 //CSS PARA LAS OFERTAS
     .main__offer{
@@ -857,20 +894,21 @@ body{
         height: auto;
         padding-bottom: 4%;
         margin: 2.5%;
+        min-width: 32em;
     }
 
     .main__offer-basic{
         .offer__title{
             display: block;
             position: relative;
-            left: 190%;
+            left: 140%;
             bottom: 20%;
         }
 
         .offer__price{
             display: block;
             position: relative;
-            left: 190%;
+            left: 140%;
             bottom: 20%;
         }
 
@@ -884,6 +922,7 @@ body{
 
             .adventage{
                 width: 175%;
+                margin: 10% 5%;
             }
         }
 
@@ -901,21 +940,21 @@ body{
         .offer__title{
             display: block;
             position: relative;
-            left: 80%;
+            left: 50%;
             bottom: 20%;
         }
 
         .offer__price{
             display: block;
             position: relative;
-            left: 80%;
+            left: 50%;
             bottom: 20%;
         }
 
         .offer__limited{
             display: block;
             position: relative;
-            left: 80%;
+            left: 50%;
             bottom: 20%;
         }
 
@@ -925,7 +964,7 @@ body{
             text-align: center;
             top: 5em;
             left: -45%;
-            margin-bottom: 38%;
+            margin-bottom: 44%;
 
             .adventage{
                 width: 175%;
@@ -946,21 +985,21 @@ body{
         .offer__title{
             display: block;
             position: relative;
-            left: 110%;
+            left: 80%;
             bottom: 20%;
         }
 
         .offer__price{
             display: block;
             position: relative;
-            left: 110%;
+            left: 80%;
             bottom: 20%;
         }
 
         .offer__limited{
             display: block;
             position: relative;
-            left: 110%;
+            left: 80%;
             bottom: 20%;
         }
 

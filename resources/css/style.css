@@ -206,6 +206,10 @@ body {
   margin: 5%;
 }
 
+.article__line {
+  display: none;
+}
+
 .main__article-imgs {
   position: relative;
 }
@@ -662,21 +666,26 @@ body {
     left: 50%;
   }
   .main__articles {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas: "always always always" "shop   shop   shop" "recog  recog  img";
+    gap: 2%;
     margin-top: 5%;
   }
   .main__article {
-    width: 60%;
-    height: 17em;
-    margin-bottom: 1%;
-    min-width: 1145px;
+    height: 100%;
+    min-width: 1308px;
+    max-width: 1353px;
+  }
+  .main__article .article__line {
+    display: block;
+  }
+  .main__article-always {
+    grid-area: always;
   }
   .main__article-always .article__title-always {
     display: inline;
     position: relative;
-    bottom: 20%;
+    bottom: 30%;
     right: 10%;
   }
   .main__article-always .main__article-imgs {
@@ -688,20 +697,30 @@ body {
   .main__article-always .article__always-img {
     transform: scale(1.5, 1.5);
     left: 150%;
-    top: 40%;
+    top: 20%;
   }
   .main__article-always .article__always-ellipse {
     display: inline-block;
     transform: scale(1.5, 1.5);
     left: 250%;
+    bottom: 1.5em;
   }
   .main__article-always .article__desc-always {
     display: inline-block;
     position: relative;
-    top: 30%;
-    right: 32%;
+    right: 29.5%;
     margin: 1%;
-    width: 14%;
+    width: 24%;
+  }
+  .main__article-always .article__line {
+    border: 2px solid #FB3B64;
+    position: relative;
+    top: 5%;
+    width: 18%;
+    left: 4%;
+  }
+  .main__article-shop {
+    grid-area: shop;
   }
   .main__article-shop .article__title-shop {
     display: inline-block;
@@ -712,8 +731,8 @@ body {
   }
   .main__article-shop .article__shop-img {
     transform: scale(1.5, 1.5);
-    right: 73%;
-    top: 4em;
+    right: 75%;
+    top: 5em;
   }
   .main__article-shop .article__shop-ellipse {
     display: inline-block;
@@ -729,14 +748,24 @@ body {
     margin: 1%;
     width: 28%;
   }
+  .main__article-shop .article__line {
+    border: 2px solid #07ACE6;
+    position: relative;
+    top: 5%;
+    width: 20%;
+    left: 64%;
+  }
   .main__article-recognition {
     display: inline-block;
-    width: 40%;
+    margin: 8% 7.5% 0;
+    min-width: 748px;
+    max-width: 800px;
+    grid-area: recog;
   }
   .main__article-recognition .article__title-recognition {
     display: inline-block;
     position: relative;
-    width: 26%;
+    width: 35%;
     font-family: "Raleway";
     font-size: 30px;
     font-weight: 400;
@@ -745,21 +774,28 @@ body {
   .main__article-recognition .article__desc-recognition {
     display: inline-block;
     position: relative;
-    right: 31.5%;
+    right: 40%;
     top: 25%;
     margin: 1%;
-    width: 28%;
-  }
-  .main__article-recognition .article__recognition-img {
     width: 40%;
-    height: 17em;
-    margin: 0 56.3%;
-    padding: 12% 16% 0 4%;
+  }
+  .main__article-recognition .article__line {
+    border: 2px solid #55DFB4;
+    position: relative;
+    top: 25%;
+    width: 30%;
+    left: 5%;
+  }
+  .article__recognition-img {
+    max-width: 400px;
+    position: relative;
+    top: 28%;
+    right: 13%;
+    padding: 25% 16% 0 4%;
     background-color: #55DFB4;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
-    position: relative;
-    bottom: 17.8em;
+    grid-area: img;
   }
   .main__offer {
     display: inline-flex;
@@ -769,17 +805,18 @@ body {
     height: auto;
     padding-bottom: 4%;
     margin: 2.5%;
+    min-width: 32em;
   }
   .main__offer-basic .offer__title {
     display: block;
     position: relative;
-    left: 190%;
+    left: 140%;
     bottom: 20%;
   }
   .main__offer-basic .offer__price {
     display: block;
     position: relative;
-    left: 190%;
+    left: 140%;
     bottom: 20%;
   }
   .main__offer-basic .offer__adventages {
@@ -792,6 +829,7 @@ body {
   }
   .main__offer-basic .offer__adventages .adventage {
     width: 175%;
+    margin: 10% 5%;
   }
   .main__offer-basic .offer__button {
     display: block;
@@ -803,19 +841,19 @@ body {
   .main__offer-pro .offer__title {
     display: block;
     position: relative;
-    left: 80%;
+    left: 50%;
     bottom: 20%;
   }
   .main__offer-pro .offer__price {
     display: block;
     position: relative;
-    left: 80%;
+    left: 50%;
     bottom: 20%;
   }
   .main__offer-pro .offer__limited {
     display: block;
     position: relative;
-    left: 80%;
+    left: 50%;
     bottom: 20%;
   }
   .main__offer-pro .offer__adventages {
@@ -824,7 +862,7 @@ body {
     text-align: center;
     top: 5em;
     left: -45%;
-    margin-bottom: 38%;
+    margin-bottom: 44%;
   }
   .main__offer-pro .offer__adventages .adventage {
     width: 175%;
@@ -839,19 +877,19 @@ body {
   .main__offer-premium .offer__title {
     display: block;
     position: relative;
-    left: 110%;
+    left: 80%;
     bottom: 20%;
   }
   .main__offer-premium .offer__price {
     display: block;
     position: relative;
-    left: 110%;
+    left: 80%;
     bottom: 20%;
   }
   .main__offer-premium .offer__limited {
     display: block;
     position: relative;
-    left: 110%;
+    left: 80%;
     bottom: 20%;
   }
   .main__offer-premium .offer__adventages {
