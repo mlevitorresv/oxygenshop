@@ -678,6 +678,7 @@ body {
   .main__article-always {
     grid-area: always;
     padding: 2%;
+    min-width: 825px;
   }
   .main__article-always .article__title-always {
     display: inline;
@@ -712,6 +713,7 @@ body {
   }
   .main__article-shop {
     grid-area: shop;
+    min-width: 825px;
   }
   .main__article-shop .article__title-shop {
     display: block;
@@ -801,9 +803,9 @@ body {
     height: auto;
     position: relative;
     text-align: center;
-    top: 5em;
+    top: 4em;
     right: 40%;
-    margin-bottom: 40%;
+    margin-bottom: 50%;
   }
   .main__offer-basic .offer__adventages .adventage {
     width: 175%;
@@ -838,9 +840,9 @@ body {
     height: auto;
     position: relative;
     text-align: center;
-    top: 5em;
+    top: 4em;
     left: -45%;
-    margin-bottom: 44%;
+    margin-bottom: 55%;
   }
   .main__offer-pro .offer__adventages .adventage {
     width: 175%;
@@ -874,9 +876,9 @@ body {
     height: auto;
     position: relative;
     text-align: center;
-    top: 5em;
+    top: 4em;
     left: -45%;
-    margin-bottom: 38%;
+    margin-bottom: 48%;
   }
   .main__offer-premium .offer__adventages .adventage {
     width: 175%;
@@ -892,6 +894,7 @@ body {
     display: inline-block;
     width: 30%;
     margin-right: 5%;
+    min-width: 413px;
   }
   .main__contact-title {
     margin-top: 5%;
