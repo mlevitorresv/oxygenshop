@@ -593,16 +593,21 @@ body {
   #header {
     width: 100%;
   }
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+  }
   .header__title {
     display: inline-block;
     margin: 1% 5%;
+    width: auto;
   }
   .header__icon {
     display: none;
   }
   .header__list {
-    display: inline-block;
-    list-style-type: none;
+    display: initial;
+    margin: 1% 5%;
   }
   .header__element {
     display: inline-block;
@@ -627,7 +632,7 @@ body {
     transform: translateX(-3.5%);
   }
   .main__opening-section {
-    margin-bottom: 0.5%;
+    margin: 5% 15%;
   }
   .opening__section-title {
     font-family: "Raleway";
@@ -679,7 +684,8 @@ body {
     display: grid;
     grid-template-areas: "always always always" "shop   shop   shop" "recog  recog  img";
     gap: 2%;
-    margin-top: 5%;
+    margin-top: 0;
+    padding: 5%;
   }
   .main__article {
     height: 100%;
@@ -698,7 +704,6 @@ body {
   }
   .main__article-always {
     grid-area: always;
-    padding: 2%;
     min-width: 825px;
   }
   .main__article-always .article__title-always {
@@ -712,14 +717,13 @@ body {
     top: 20%;
   }
   .main__article-always .article__always-img {
-    transform: scale(1.5, 1.5);
+    transform: scale(2.5, 2.5);
     right: -170%;
-    top: 20%;
+    top: 70%;
   }
   .main__article-always .article__always-ellipse {
-    transform: scale(1.5, 1.5);
-    left: 215%;
-    bottom: 1.5em;
+    transform: scale(2.5, 2.5);
+    left: 250%;
   }
   .main__article-always .article__desc-always {
     display: block;
@@ -742,17 +746,19 @@ body {
     margin-left: 60%;
     margin-bottom: 2%;
     margin-top: 2%;
+    line-height: 1.5em;
   }
   .main__article-shop .article__shop-img {
-    transform: scale(1.5, 1.5);
+    transform: scale(2.5, 2.5);
     right: 75%;
-    top: 5em;
+    top: 10em;
   }
   .main__article-shop .article__shop-ellipse {
     display: inline-block;
-    transform: scale(1.5, 1.5);
+    transform: scale(2.5, 2.5);
     position: absolute;
     left: 10%;
+    margin-top: 10%;
   }
   .main__article-shop .article__desc-shop {
     margin: 1%;
@@ -923,7 +929,7 @@ body {
   .info__section {
     display: inline-block;
     width: 30%;
-    margin-right: 5%;
+    margin-right: 30%;
     margin-bottom: 2%;
     min-width: 456px;
   }
@@ -953,8 +959,10 @@ body {
   }
   .consent__section {
     display: inline-block;
+    position: absolute;
+    right: 20%;
     width: 30%;
-    margin-left: 5%;
+    margin-left: 20%;
   }
   .main__consent-check {
     position: initial;
