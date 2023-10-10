@@ -41,8 +41,8 @@ body{
     width: 50%;
     font-family: $family-raleway;
     font-weight: 300;
-    font-size: 32px;
-    line-height: 37px;
+    font-size: 2em;
+    line-height: 2.3em;
 }
 
 //icono de menu
@@ -84,16 +84,16 @@ body{
 
 .opening__section-title{
     font-family: $family-raleway;
-    font-size: 35px;
+    font-size: 2.3em;
     font-weight: 400;
-    line-height: 41px;
+    line-height: 2.5em;
 }
 
 .opening__section-desc{
     font-family: $family-open-sans;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
-    line-height: 23px;
+    line-height: 1.4em;
     width: 90%;
     margin: 5% 5% 10%;
     flex-shrink: 0;
@@ -110,8 +110,8 @@ body{
 
     font-family: $family-open-sans;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1em;
+    line-height: 1.3em;
     color: white;
 }
 
@@ -133,9 +133,9 @@ body{
     width: 70%;
     margin: 0% 15%;
     font-family: $family-raleway;
-    line-height: 35px;
+    line-height: 2.1em;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 1.8em;
     flex-shrink: 0;
 }
 
@@ -174,10 +174,10 @@ body{
 
 .data__number{
     font-family: $family-raleway;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 800;
-    line-height: 24px;
-    letter-spacing: 6px;
+    line-height: 1.5em;
+    letter-spacing: .3em;
     width: 80%;
     margin: auto;
     margin-top: 10%;
@@ -186,9 +186,9 @@ body{
 .data__desc{
     color: #A5A5A5;
     font-family: $family-raleway;
-    font-size: 17px;
+    font-size: 1em;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 1.25em;
     width: 70%;
     margin: auto;
     flex-shrink: 0;
@@ -214,16 +214,16 @@ body{
 .article__title{
     width: 80%;
     font-family: "Raleway";
-    font-size: 30px;
+    font-size: 1.8em;
     font-weight: 400;
     margin: 8% 4% 4%;;
 }
 
 .article__desc{
     font-family: $family-open-sans;
-    font-size: 14px;
+    font-size: 0.8em;
     font-weight: 400;
-    line-height: 19px;
+    line-height: 1.1em;
     margin: 5%;
 }
 
@@ -275,7 +275,7 @@ body{
 
 .main__title-pricing{
     font-family: $family-raleway;
-    font-size: 36px;
+    font-size: 2.25em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -318,10 +318,10 @@ body{
 
 .offer__price{
     font-family: $family-open-sans;
-    font-size: 46px;
+    font-size: 2.8em;
     font-style: normal;
     font-weight: 300;
-    line-height: 64px;
+    line-height: 1em;
 }
 
 .offer__price-basic{
@@ -349,9 +349,9 @@ body{
 
 .offer__title{
     font-family: $family-raleway;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.5em;
     font-style: normal;
 }
 
@@ -447,7 +447,7 @@ body{
 
     align-content: center;
     font-family: "Open Sans";
-    font-size: 13px;
+    font-size: 0.8em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -456,7 +456,7 @@ body{
 
 .offer__limited{
     font-family: $family-raleway;
-    font-size: 12px;
+    font-size: 0.6em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -473,16 +473,16 @@ body{
     
     color: $color-web;
     font-family: $family-open-sans;
-    font-size: 11px;
+    font-size: 0.6em;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: 3px;
+    letter-spacing: 0.15em;
 }
 
 .main__contact-title{
     font-family: $family-raleway;
-    font-size: 40px;
+    font-size: 2.5em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -492,10 +492,10 @@ body{
 
 .main__contact-desc{
     font-family: $family-open-sans;
-    font-size: 16px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 1.3em;
     float: left;
     width: 75%;
     text-align: left;
@@ -506,10 +506,10 @@ body{
 .main__contact-forms{
     color: $contact-p-color;
     font-family: $family-open-sans;
-    font-size: 16px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 600;
-    line-height: 22px;
+    line-height: 1.3em;
     display: block;
     float: left;
     margin-left: 10%;
@@ -539,7 +539,7 @@ body{
     width: 70%;
     color: #707070;
     font-family: "Open Sans";
-    font-size: 12px;
+    font-size: 0.6em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -561,7 +561,7 @@ body{
 
     color: white;
     font-family: $family-open-sans;
-    font-size: 13px;
+    font-size: 0.8em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -583,10 +583,10 @@ body{
 .footer__title{
     color: $color-web;
     font-family: $family-raleway;
-    font-size: 26px;
+    font-size: 1.6em;
     font-style: normal;
     font-weight: 300;
-    line-height: 30px;
+    line-height: 1.8em;
 }
 
 .footer__rights{
@@ -594,7 +594,7 @@ body{
     font-family: $family-open-sans;
     display: block;
     margin-top: 2%;
-    font-size: 11px;
+    font-size: 0.6em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -664,11 +664,11 @@ body{
     .header__element-link{
         text-decoration: none;
         color: $contact-p-color;
-        font-family: $family-open-sans;
-        font-size: 11px;
-        font-weight: 700;
-        line-height: 15px;
-        letter-spacing: 3px;
+        font-family: $family-raleway;
+        font-size: 2em;
+        font-weight: 300;
+        line-height: 2.3em;
+        letter-spacing: 0.15em;
         text-transform: uppercase;
     }
 
@@ -676,6 +676,12 @@ body{
         color: black;
     }
 
+    .img__background{
+        width: 107%;
+        height: auto;
+        display: block;
+        transform: translateX(-3.5%);
+    }
 
     //SECTION OPENING
 
@@ -683,11 +689,18 @@ body{
         margin-bottom: .5%;
     }
 
+    .opening__section-title{
+        font-family: $family-raleway;
+        font-weight: 400;
+        font-size: 3em;
+        line-height: 3.5em;
+    }
+
     .opening__section-desc{
         font-family: $family-open-sans;
-        font-size: 16px;
+        font-size: 1em;
         font-weight: 400;
-        line-height: 22px;
+        line-height: 1.3em;
         width: 90%;
         margin: 1% 5% 3%;
         flex-shrink: 0;
@@ -706,9 +719,9 @@ body{
         width: 70%;
         margin: 0% 15%;
         font-family: $family-raleway;
-        line-height: 42px;
+        line-height: 2.6em;
         font-weight: 400;
-        font-size: 36px;
+        font-size: 2.25em;
         flex-shrink: 0;
     }
 
@@ -745,6 +758,16 @@ body{
     .main__article{
         height: 100%;
         max-width: 1353px;
+
+        .article__title{
+            font-size: 2.25em;
+            line-height: 2.6em;
+        }
+
+        .article__desc{
+            font-size: 1em;
+            line-height: 1.3em;
+        }
 
         .article__line{
             display: block;
@@ -838,7 +861,7 @@ body{
         .article__title-recognition{
             width: 35%;
             font-family: $family-raleway;
-            font-size: 30px;
+            font-size: 1.8em;
             font-weight: 400;
         };
     
@@ -877,6 +900,16 @@ body{
         max-width: 356px;
     }
 
+    .main__title-pricing{
+        line-height: 2.6em;
+    }
+
+    .adventage{
+        font-size: 0.8em;
+        line-height: 1.1em;
+        font-weight: 400;
+        font-family: 'Open Sans';
+    }
     .main__offer-basic{
         .offer__title{
             display: block;
@@ -1011,14 +1044,15 @@ body{
         display: inline-block;
         width: 30%;
         margin-right: 5%;
-        margin-bottom: 7%;
+        margin-bottom: 2%;
         min-width: 456px;
     }
 
     .main__contact-title{
         margin-top: 5%;
         margin-left: 32%;
-        font-size: 49px;
+        font-size: 3em;
+        line-height: 3.5em;
     }
 
     .main__contact-data{
@@ -1031,6 +1065,7 @@ body{
         margin-bottom: 4%;
         margin-left: 32%;
         width: auto;
+        line-height: 1em;
     }
 
     .main__contact-forms{
@@ -1070,17 +1105,17 @@ body{
         display: inline-block;
         color: $color-web;
         font-family: $family-raleway;
-        font-size: 26px;
+        font-size: 1.6em;
         font-style: normal;
         font-weight: 300;
-        line-height: 30px;
+        line-height: 1.8em;
         margin-bottom: 1%;
     }
 
     .footer__rights{
         color: $contact-p-color;
         font-family: $family-open-sans;
-        font-size: 11px;
+        font-size: 0.6em;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
