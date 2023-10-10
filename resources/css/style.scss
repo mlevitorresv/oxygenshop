@@ -123,9 +123,10 @@ body{
 }
 
 .img__background{
-    width: 100%;
+    width: 200%;
     height: auto;
     display: block;
+    transform: translateX(-25%);
 }
 
 .main__title-popularity{
@@ -486,7 +487,7 @@ body{
     font-weight: 400;
     line-height: normal;
     float: left;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 
 .main__contact-desc{
@@ -498,7 +499,7 @@ body{
     float: left;
     width: 75%;
     text-align: left;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-bottom: 10%;
 }
 
@@ -511,7 +512,7 @@ body{
     line-height: 22px;
     display: block;
     float: left;
-    margin-left: 15%;
+    margin-left: 10%;
     width: 75%;
     text-align: left;
 }
