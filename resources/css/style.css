@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -748,6 +748,7 @@ body {
     margin: 8% 7.5% 0;
     max-width: 800px;
     grid-area: recog;
+    height: auto;
   }
   .main__article-recognition .article__title-recognition {
     width: 35%;
@@ -762,8 +763,7 @@ body {
   .main__article-recognition .article__line {
     border: 2px solid #55DFB4;
     width: 30%;
-    margin-left: 3%;
-    margin-top: 3%;
+    margin: 3%;
   }
   .article__recognition-img {
     max-width: 400px;
@@ -894,7 +894,8 @@ body {
     display: inline-block;
     width: 30%;
     margin-right: 5%;
-    min-width: 413px;
+    margin-bottom: 7%;
+    min-width: 456px;
   }
   .main__contact-title {
     margin-top: 5%;
@@ -925,6 +926,7 @@ body {
   }
   .main__consent-check {
     position: initial;
+    transform: translate(-150%, -750%);
   }
   #footer {
     height: 8%;
