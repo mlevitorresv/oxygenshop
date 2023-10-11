@@ -682,7 +682,7 @@ body {
   }
   .main__articles {
     display: grid;
-    grid-template-areas: "always always always" "shop   shop   shop" "recog  recog  img";
+    grid-template-areas: "always always always" "shop   shop   shop" "recog  recog  recog";
     gap: 2%;
     margin-top: 0;
     padding: 5%;
@@ -772,11 +772,9 @@ body {
     margin-bottom: 3%;
   }
   .main__article-recognition {
-    display: inline-block;
-    margin: 8% 7.5% 0;
-    max-width: 800px;
+    display: flex;
     grid-area: recog;
-    height: auto;
+    max-width: 1353px;
   }
   .main__article-recognition .article__title-recognition {
     width: 35%;
@@ -802,7 +800,6 @@ body {
     background-color: #55DFB4;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
-    grid-area: img;
   }
   .main__offer {
     display: inline-flex;
@@ -919,6 +916,10 @@ body {
   .main__contact-forms-tel {
     margin-left: 2%;
   }
+  .main__consent-data {
+    display: flex;
+    justify-content: center;
+  }
   .consent__section {
     display: inline-block;
     right: 20%;
@@ -926,7 +927,8 @@ body {
   }
   .main__consent-check {
     position: initial;
-    transform: translate(-150%, -750%);
+    margin-right: 5%;
+    margin-bottom: 5%;
   }
   #footer {
     height: 8%;

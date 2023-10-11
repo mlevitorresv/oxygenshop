@@ -756,7 +756,7 @@ body{
         grid-template-areas: 
             "always always always"
             "shop   shop   shop"
-            "recog  recog  img"
+            "recog  recog  recog"
             ;
         gap: 2%;
         margin-top: 0;
@@ -859,12 +859,11 @@ body{
         }
     }
 
+
     .main__article-recognition{
-        display: inline-block;
-        margin: 8% 7.5% 0;
-        max-width: 800px;
+        display: flex;
         grid-area: recog;
-        height: auto;
+        max-width: 1353px;
 
         .article__title-recognition{
             width: 35%;
@@ -892,7 +891,7 @@ body{
         background-color: #55DFB4;
         border: 1px solid #E8E9ED;
         border-radius: 5px;
-        grid-area: img;
+        // grid-area: img;
     };
 
 //CSS PARA LAS OFERTAS
@@ -1044,6 +1043,11 @@ body{
     .main__contact-forms-tel{
         margin-left: 2%;
     }
+
+    .main__consent-data{
+        display: flex;
+        justify-content: center;
+    }
     
     .consent__section{
         display: inline-block;
@@ -1053,7 +1057,8 @@ body{
 
     .main__consent-check{
         position: initial;
-        transform: translate(-150%, -750%);
+        margin-right: 5%;
+        margin-bottom: 5%;
     }
  
     
