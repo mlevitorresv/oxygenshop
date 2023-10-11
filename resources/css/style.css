@@ -327,6 +327,9 @@ body {
   position: relative;
   top: 30%;
   margin: 5%;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 0.8em;
 }
 
 .offer__title {
