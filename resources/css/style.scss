@@ -233,9 +233,17 @@ body{
 }
 
 .main__article-recognition{
-    padding-bottom: 0;
+    background-color: #f7f7f7;
+    border: none;
 }
 
+.article__recognition-info{
+    background-color: white;
+    margin-bottom: 0;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    padding: 1%;
+}
 
 .main__article-imgs{
     position: relative;
