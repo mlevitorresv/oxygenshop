@@ -54,7 +54,7 @@ body {
   text-decoration: none;
 }
 
-#main {
+.heae #main {
   text-align: center;
 }
 
@@ -626,9 +626,11 @@ body {
     line-height: 2.3em;
     letter-spacing: 0.15em;
     text-transform: uppercase;
+    padding-bottom: 1.9em;
   }
   .header__element-link:hover {
     color: black;
+    border-bottom: 3px solid #08A6E4;
   }
   .img__background {
     width: 107%;
