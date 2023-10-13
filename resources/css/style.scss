@@ -42,6 +42,11 @@ body{
     z-index: 100;
 }
 
+.header__element{
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+
 .header__title,
 .header__icon{
     display: $display-line-block;
@@ -70,11 +75,6 @@ body{
     width: 100%;
 }
 
-
-.header__element{
-    margin-left: 1em;
-    margin-bottom: .5em;
-}
 
 .header__element-link{
     text-decoration: none;
@@ -687,6 +687,7 @@ body{
     .header__list{
         display: initial;
         margin: 1% 5%;
+        width: auto;
     }
 
     .header__element{
@@ -702,7 +703,7 @@ body{
         line-height: 2.3em;
         letter-spacing: 0.15em;
         text-transform: uppercase;
-        padding-bottom: 1.8em;
+        padding-bottom: 1.33em;
     }
 
     .header__element-link:hover{

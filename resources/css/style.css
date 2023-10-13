@@ -26,6 +26,11 @@ body {
   z-index: 100;
 }
 
+.header__element {
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+}
+
 .header__title,
 .header__icon {
   display: inline-block;
@@ -50,11 +55,6 @@ body {
   display: none;
   list-style-type: none;
   width: 100%;
-}
-
-.header__element {
-  margin-left: 1em;
-  margin-bottom: 0.5em;
 }
 
 .header__element-link {
@@ -633,6 +633,7 @@ body {
   .header__list {
     display: initial;
     margin: 1% 5%;
+    width: auto;
   }
   .header__element {
     display: inline-block;
