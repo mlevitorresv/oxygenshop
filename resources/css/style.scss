@@ -626,7 +626,6 @@ body{
     
     .main__article{
         max-width: 305px;
-        //min-width: 377px;
     }
 
     .main__offer{
@@ -636,7 +635,7 @@ body{
     }
 
     .article__recognition-img{
-        max-width: 303px;
+        width: 100%;
     }
 }
 
