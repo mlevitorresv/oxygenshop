@@ -24,6 +24,59 @@ body{
     min-width: 320px;
 }
 
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(155, 155, 155, .6);
+    z-index: 1000;
+}
+
+.modal__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2em;
+    text-align: center;
+    border: .5em solid $color-web;
+}
+
+.modal__title{
+    margin-bottom: 2em;
+    color: $color-web;
+}
+
+.modal__email{
+    color: $color-web;
+    border: none;
+    border-bottom: 1px solid $color-web;
+}
+
+.modal__close{
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    color: $color-web;
+    cursor: pointer;
+}
+
+.modal__send{
+    display: block;
+    padding:.5em 1em;
+    background-color: white;
+    border: 1px solid $color-web;
+    color: $color-web;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 1em;
+}
+
+
 #header{
     color: $color-web;
     width: 100%;
@@ -305,6 +358,11 @@ body{
     margin-top: 5%;
 }
 
+.main__offer-coin{
+    display: block;
+    margin: 0 auto;
+}
+
 .main__offer{
     margin: 10% auto;
     padding: 2% 3%;
@@ -489,6 +547,63 @@ body{
     line-height: normal;
 }
 
+.main__slider{
+    position: relative;
+    width: 40%;
+    min-width: 245px;
+    overflow: hidden;
+    margin: 3em auto;
+    .slides__img{
+        display: none;
+        width: 100%;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    .fi{
+        color: $color-web;
+        position: absolute;
+        z-index: 10;
+        margin: 0;
+    }
+    .fi__prev{
+        left: 2%;
+        top: 50%;
+        transform: rotate(180deg);
+    }
+
+    .fi__next{
+        right: 2%;
+        top: 50%;
+    }
+
+    .dots{
+        position: absolute;
+        bottom: 5%;
+        left: 40%;
+        width: 20%;
+        display: flex;
+        z-index: 100;
+    }
+
+    .slider__dot{
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-color: black;
+        border: 1px solid $color-web;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    .active{
+        background-color: $color-web;
+    }
+}
+
 .main__contact-data{
     display: flex;
     flex-direction: column;
@@ -592,6 +707,12 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+ 
+//RETURN TO THE TOP
+.fi{
+    margin-left: 95%;
+    animation-timing-function: linear;
 }
 
 #footer{
@@ -1100,9 +1221,6 @@ body{
         margin-right: 5%;
         margin-bottom: 5%;
     }
- 
-    
-
 
     //FOOTER
 

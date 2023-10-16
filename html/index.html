@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel="stylesheet" href="../resources/css/style.css">
-    <script src="../resources/js/index.js" defer></script>
     <title>OXYGENShop</title>
 </head>
 <body>
+    <div class="modal" id="modal">
+        <div class="modal__content" id="modalContent">
+            <span class="modal__close" id="modalClose">X</span>
+            <h2 class="modal__title">Subscribe to our newsletter</h2>
+            <input type="text" name="email" class="modal__email" id="modalEmail" placeholder="email">
+            <button class="modal__send" id="modalSend">Submit</button>
+        </div>
+    </div>
     <div id="header">
         <div class="header__scroller" id="scroller"></div>
         <div class="header__nav">
@@ -103,6 +111,11 @@
         </div>
         <div class="main__offers">
             <h3 class="main__title-pricing">Pricing</h3>
+            <select  id="coinSelect" class="main__offer-coin">
+                <option value="usd" id="coinUSD">USD $</option>
+                <option value="eur" id="coinEUR">EUR €</option>
+                <option value="gbp" id="coinGBP"id="coinEur">GBP £</option>
+            </select>
             <div class="main__offer main__offer-basic">
                 <div class="offer__model">
                     <h4 class="offer__title offer__title-basic">Basic</h4>
@@ -196,6 +209,30 @@
             </div>
         </div>
 
+        <div id="slider" class="main__slider">
+            <div class="slides__img">
+                <img src="../resources/media/images/slider1.jpg" alt="code">
+            </div>
+            <div class="slides__img">
+                <img src="../resources/media/images/slider2.jpg" alt="pc with code">
+            </div>
+            <div class="slides__img">
+                <img src="../resources/media/images/slider3.jpg" alt="pc with code">
+            </div>
+            <div class="slides__img">
+                <img src="../resources/media/images/slider4.jpg" alt="pc with code">
+            </div>
+            <i class="fi fi-sr-play fi__next"></i>
+            <i class="fi fi-sr-play fi__prev"></i>
+
+            <div class="dots">
+                <div class="slider__dot active"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__dot"></div>
+                <div class="slider__dot"></div>
+            </div>
+        </div>
+
         <div class="main__contact-section">
             <div class="info__section">
                 <h3 class="main__contact-title">Any questions?</h3>
@@ -227,16 +264,19 @@
                         95/46/EC (Data Protection Directive)
                     </label>
                 </div>
-                <button class="main__consent-send">Send</button>
+                <button class="main__consent-send" id="dataSend">Send</button>
             </div>    
         </div>
     </div>
-    <i class="fi fi-sr-arrow-circle-up"></i>
+    <i class="fi fi-sr-arrow-circle-up" id="goTop"></i>
     <div id="footer">
         <h4 class="footer__title">OXYGENShop</h4>
         <img src="../resources/media/images/twitter.png" alt="icono de twitter" class="footer__icon footer__icon-twitter" />
         <img src="../resources/media/images/facebook.png" alt="icono de facebook" class="footer__icon footer__icon-facebook" />
         <p class="footer__rights">&copy; 2022 OXYGEN, All Rights Reserved</p>
     </div>
+    
+    <script src="../resources/js/script.js"></script>
+    <script src="../resources/js/slider.js"></script>
 </body>
 </html>
