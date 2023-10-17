@@ -97,17 +97,49 @@ const sendData = () => {
 //POPUP SUSCRIBE
 const showModal = () => {
     setTimeout(() =>{
-        modal.style.display= "block";
-    }, 5000);
+        openModal();
+    }, 5000)
 }
 
+const openScrollModal = () => {
+    //PX DE ALTURA DEL BODY
+    bodyHeight = document.body.scrollHeight;
+    //PX DE ALTURA DE LA VENTANA
+    windowHeight = window.innerHeight;
+
+    //% QUE HEMOS BAJADO
+    posScroll = Math.round(window.scrollY / (bodyHeight - windowHeight) *100);
+
+    if(posScroll == 25){
+        openModal();
+    }
+}
+
+const openModal = () => {
+    if(sessionStorage.getItem("closed") !== "true"){
+        modal.style.display= "block";
+    }
+}
+
+const outOfModal = (event) => {
+    const position = modalContent.getBoundingClientRect();
+    if(
+        event.clientX < position.left || event.clientX > position.right ||
+        event.clientY < position.top || event.clientY > position.bottom
+    ){
+        closeModal();
+    }
+}
+
+const keyCloseModal = (event) => {
+    if(event.keyCode == 27){
+        closeModal();
+    }
+}
 
 const closeModal = () =>{
     modal.style.display= "none";
-}
-
-const modalOut = (e) => {
-
+    sessionStorage.setItem("closed", "true");
 }
 
 const sendModal = () => {
@@ -122,9 +154,21 @@ const sendModal = () => {
             },
         })
         .then(response => response.json())
-        .then(json => console.log(json))
-        .catch(err => console.log(err));
+        .then(json => {
+            console.log(json);
+            modalEmail.value = "Email send";
+            modalEmail.style.textAlign = "center";
+
+        })
+        .catch(err => {
+            console.log(err);
+            modalEmail.value = "An error was ocurred";
+            modalEmail.style.textAlign = "center";
+
+        });
     }
+
+    
 }
 
 const getPrices = () =>{
@@ -167,14 +211,16 @@ const convertCoin = (c) => {
 
 burgerMenu.onclick = showMenu;
 window.onscroll = showPercentageScroll;
+window.onscroll = openScrollModal;;
 btGoTop.onclick = goTop;
 inputName.oninput = validName;
 inputEmail.oninput = validEmail;
 dataSend.onclick = sendData;
 window.onload = showModal;
 btCloseModal.onclick = closeModal;
-// modal.onclick = closeModal;
+modal.onclick = outOfModal;
 btModalSend.onclick = sendModal;
+document.onkeydown = keyCloseModal;
 coinSelect.onchange = () => {
     convertCoin(coinSelect.value);
 }

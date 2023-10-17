@@ -4,6 +4,8 @@ class Slider{
         this.slides = this.slider.getElementsByClassName("slides__img")
         this.index = 0;
 
+        this.dots = this.slider.getElementsByClassName("slider__dot");
+
         this.prevButton = this.slider.getElementsByClassName("fi__prev")[0];
         this.nextButton = this.slider.getElementsByClassName("fi__next")[0];
 
@@ -19,19 +21,21 @@ class Slider{
         else if(index >= this.slides.length) index = 0;
 
         this.slides[index].style.display = "block";
+        this.dots[index].classList.add("active");
 
-        for (let i = 0; index < this.slides.length; i++) {
+        for (let i = 0; i < this.slides.length; i++) {
             if(i !== index){
                 this.slides[i].style.display="none";
+                this.dots[i].classList.remove("active");
             }            
         }
         this.index = index;
     }
 
     autoSlide(){
-        setTimeout(() => {
+        setInterval(() => {
             this.showSlide(this.index + 1);
-        }, 2000);
+        }, 5000);
     }
 }
 

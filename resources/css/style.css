@@ -523,6 +523,8 @@ body {
 .main__slider img {
   width: 100%;
   height: auto;
+  border: 3px solid #08A6E4;
+  border-radius: 15px;
 }
 .main__slider .fi {
   color: #08A6E4;
@@ -545,10 +547,10 @@ body {
   left: 40%;
   width: 20%;
   display: flex;
+  flex-direction: row;
   z-index: 100;
 }
 .main__slider .slider__dot {
-  display: inline-block;
   width: 15px;
   height: 15px;
   background-color: black;
