@@ -1,6 +1,7 @@
 let scroller = document.getElementById("scroller");
 let burgerMenu = document.getElementById("burgerMenu");
 let menu = document.getElementById("headerList");
+let menuOpen = false;
 let btGoTop = document.getElementById("goTop");
 let inputName = document.getElementById("name");
 let inputEmail = document.getElementById("email");
@@ -24,8 +25,14 @@ let bodyHeight;
 let windowHeight;
 
 //burgerMenu
-const showMenu = ()=>{
-    menu.style.display = "block";
+const handleMenu = ()=>{
+    if(!menuOpen){
+        menu.style.display = "block";
+        menuOpen = true;
+    }else{
+        menu.style.display = "none";
+        menuOpen = false;
+    }
 }
 
 
@@ -209,7 +216,7 @@ const convertCoin = (c) => {
 
 
 
-burgerMenu.onclick = showMenu;
+burgerMenu.onclick = handleMenu;
 window.onscroll = showPercentageScroll;
 window.onscroll = openScrollModal;;
 btGoTop.onclick = goTop;
