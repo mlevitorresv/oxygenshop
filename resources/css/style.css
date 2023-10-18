@@ -206,6 +206,7 @@ body {
   border: 1px solid #E8E9ED;
   border-radius: 5px;
   text-align: left;
+  padding: 1em;
 }
 
 .article__title {
@@ -231,6 +232,7 @@ body {
 .main__article-recognition {
   background-color: #f7f7f7;
   border: none;
+  padding: 0;
 }
 
 .article__recognition-info {
@@ -238,7 +240,7 @@ body {
   margin-bottom: 0;
   border: 1px solid #E8E9ED;
   border-radius: 5px;
-  padding: 1%;
+  padding: 1em;
 }
 
 .main__article-imgs {
@@ -278,14 +280,15 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 5%;
+  margin-top: 2em;
 }
 
 .main__offer {
-  margin: 10% auto;
+  margin: 5em auto;
   padding: 2% 3%;
   flex-shrink: 0;
   position: relative;
+  padding: 1em;
 }
 
 .main__offer-basic:hover {
@@ -347,6 +350,8 @@ body {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 0.8em;
+  font-style: normal;
+  line-height: normal;
 }
 
 .offer__title {
@@ -642,12 +647,13 @@ body {
     text-decoration: none;
     color: #A5A5A5;
     font-family: "Open Sans";
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
     line-height: 2.3em;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    padding-bottom: 1.8em;
+    padding-bottom: 2.8em;
+    margin-left: 4em;
   }
   .header__element-link:hover {
     color: black;
