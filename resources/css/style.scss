@@ -675,7 +675,8 @@ body{
 
     .header__nav{        
         display: flex; 
-        justify-content: space-between; 
+        justify-content: space-between;
+        align-items: center;
     }
 
     .header__title{
@@ -702,12 +703,12 @@ body{
         text-decoration: none;
         color: $contact-p-color;
         font-family: $family-open-sans;
-        font-size: 1.5em;
+        font-size: 1em;
         font-weight: 700;
         line-height: 2.3em;
         letter-spacing: 0.15em;
         text-transform: uppercase;
-        padding-bottom: 2.8em;
+        padding-bottom: 3em;
         margin-left: 4em;
     }
 

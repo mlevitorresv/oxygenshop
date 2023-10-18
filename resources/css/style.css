@@ -626,6 +626,7 @@ body {
   .header__nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   .header__title {
     display: inline-block;
@@ -647,12 +648,12 @@ body {
     text-decoration: none;
     color: #A5A5A5;
     font-family: "Open Sans";
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 700;
     line-height: 2.3em;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    padding-bottom: 2.8em;
+    padding-bottom: 3em;
     margin-left: 4em;
   }
   .header__element-link:hover {
