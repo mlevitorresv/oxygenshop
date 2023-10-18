@@ -6,23 +6,24 @@ let btGoTop = document.getElementById("goTop");
 let inputName = document.getElementById("name");
 let inputEmail = document.getElementById("email");
 let inputCheck = document.getElementById("consent-check");
-const urlPOST = 'https://jsonplaceholder.typicode.com/posts';
 let dataSend = document.getElementById("dataSend");
-let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 let modal = document.getElementById("modal");
 let btCloseModal = document.getElementById("modalClose");
 let modalEmail = document.getElementById("modalEmail");
 let btModalSend = document.getElementById("modalSend");
 let modalContent = document.getElementById("modalContent");
-let urlcoinGET = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json';
 let coinSelect = document.getElementById("coinSelect");
 let offerPrice = document.getElementsByClassName("offer__price");
-let prices = [];
 
 
 let posScroll;
 let bodyHeight;
 let windowHeight;
+const urlPOST = 'https://jsonplaceholder.typicode.com/posts';
+let emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+let urlcoinGET = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json';
+let prices = [];
+
 
 //burgerMenu
 const handleMenu = ()=>{
