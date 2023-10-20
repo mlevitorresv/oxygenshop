@@ -8,10 +8,11 @@
 </head>
 <body>
     <div id="header">
+        <div class="header__scroller" id="scroller"></div>
         <div class="header__nav">
             <h1 class="header__title">OXYGENShop</h1>
-            <img src="../resources/media/images/Menu.png" alt="icono de menu" class="header__icon" />
-            <ul class="header__list">
+            <img src="../resources/media/images/Menu.png" alt="icono de menu" class="header__icon" id="burgerMenu"/>
+            <ul class="header__list" id="headerList">
                 <li class="header__element"><a href="#" class="header__element-link">WHY US</a></li>
                 <li class="header__element"><a href="#" class="header__element-link">BENEFITS</a></li>
                 <li class="header__element"><a href="#" class="header__element-link">PRICES</a></li>
@@ -87,15 +88,17 @@
                 <p class="article__line article__line-shop"></p>
             </div>
             <div class="main__article main__article-recognition">
-                <h3 class="article__title article__title-recognition">Increase recognition your brand!</h3>
-                <p class="article__desc article__desc-recognition">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam.
-                </p>                
-                <p class="article__line article__line-recognition"></p>
+                <div class="article__recognition-info">
+                    <h3 class="article__title article__title-recognition">Increase recognition your brand!</h3>
+                    <p class="article__desc article__desc-recognition">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna 
+                        aliqua. Ut enim ad minim veniam.
+                    </p>                
+                    <p class="article__line article__line-recognition"></p>
+                </div>                
+                <img src="../resources/media/images/Trumpet.png" alt="trumpet" class="article__img article__recognition-img">
             </div>
-            <img src="../resources/media/images/Trumpet.png" alt="trumpet" class="article__img article__recognition-img">
         </div>
         <div class="main__offers">
             <h3 class="main__title-pricing">Pricing</h3>
@@ -104,36 +107,28 @@
                     <h4 class="offer__title offer__title-basic">Basic</h4>
                     <p class="offer__price offer__price-basic">$0</p>
                 </div>
-                <div class="offer__adventages offer__adventages-basic">
-                    <p class="adventage adventage__hdd">
+                <ul class="offer__adventages offer__adventages-basic">
+                    <li class="adventage adventage__hdd">
                         <img src="../resources/media/images/checkbox.png" alt="checbox" class="adventage__checked"/>
                         100 MB HDD
-                    </p>
-                    <p class="adventage adventage__subdomain">
+                    </li>
+                    <li class="adventage adventage__subdomain">
                         <img src="../resources/media/images/checkbox.png" alt="checbox" class="adventage__checked"/>
                         1 Subdomain
-                    </p>
-                    <p class="adventage adventage__emails">
+                    </li>
+                    <li class="adventage adventage__emails">
                         <img src="../resources/media/images/checkbox.png" alt="checbox" class="adventage__checked"/>
                         2 E-mails
-                    </p>
-                    <p class="adventage adventage__license">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                            <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#EB476E"/>
-                            <line x1="3" y1="8" x2="8" y2="3" stroke="#EB476E" stroke-width="1" />
-                            <line x1="3" y1="3" x2="8" y2="8" stroke="#EB476E" stroke-width="1" />
-                        </svg>
+                    </li>
+                    <li class="adventage adventage__license">
+                        <img src="../resources/media/images/Cross.png" alt="checbox" class="adventage__unchecked"/>
                         Two years license
-                    </p>
-                    <p class="adventage adventage__support">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                            <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#EB476E"/>
-                            <line x1="3" y1="8" x2="8" y2="3" stroke="#EB476E" stroke-width="1" />
-                            <line x1="3" y1="3" x2="8" y2="8" stroke="#EB476E" stroke-width="1" />
-                        </svg>
+                    </li>
+                    <li class="adventage adventage__support">
+                        <img src="../resources/media/images/Cross.png" alt="checbox" class="adventage__unchecked"/>
                         Full support
-                    </p>
-                </div>
+                    </li>
+                </ul>
                 <button class="offer__button offer__button-basic">Begin</button>
             </div>
 
@@ -143,32 +138,28 @@
                     <p class="offer__price offer__price-pro">$25</p>
                     <p class="offer__limited">Limited offer</p>
                 </div>
-                <div class="offer__adventages offer__adventages-pro">
-                    <p class="adventage adventage__hdd">
+                <ul class="offer__adventages offer__adventages-pro">
+                    <li class="adventage adventage__hdd">
                         <img src="../resources/media/images/checkbox.png" alt="checbox" class="adventage__checked"/>
                         500 MB HDD
-                    </p>
-                    <p class="adventage adventage__subdomain">
+                    </li>
+                    <li class="adventage adventage__subdomain">
                         <img src="../resources/media/images/checkbox.png" alt="checbox" class="adventage__checked"/>
                         2 Subdomains
-                    </p>
-                    <p class="adventage adventage__emails">
+                    </li>
+                    <li class="adventage adventage__emails">
                         <img src="../resources/media/images/checkbox.png" alt="checbox" class="adventage__checked"/>
                         5 E-mails
-                    </p>
-                    <p class="adventage adventage__license">
+                    </li>
+                    <li class="adventage adventage__license">
                         <img src="../resources/media/images/checkbox.png" alt="checbox" class="adventage__checked"/>
                         One years license
-                    </p>
-                    <p class="adventage adventage__support">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                            <rect x="0.5" y="0.5" width="10" height="10" rx="1.5" stroke="#EB476E"/>
-                            <line x1="3" y1="8" x2="8" y2="3" stroke="#EB476E" stroke-width="1" />
-                            <line x1="3" y1="3" x2="8" y2="8" stroke="#EB476E" stroke-width="1" />
-                        </svg>
+                    </li>
+                    <li class="adventage adventage__support">
+                        <img src="../resources/media/images/Cross.png" alt="checbox" class="adventage__unchecked"/>
                         Full support
-                    </p>
-                </div>
+                    </li>
+                </ul>
                 <button class="offer__button offer__button-pro">Begin</button>
             </div>
 
@@ -178,28 +169,28 @@
                     <p class="offer__price offer__price-premium">$60</p>
                     <p class="offer__limited">Limited offer</p>
                 </div>
-                <div class="offer__adventages offer__adventages-premium">
-                    <p class="adventage adventage__hdd">
+                <ul class="offer__adventages offer__adventages-premium">
+                    <li class="adventage adventage__hdd">
                         <img src="../resources/media/images/checkbox.png" alt="checbox" class="adventage__checked"/>
                         2 GB HDD
-                    </p>
-                    <p class="adventage adventage__subdomain">
+                    </li>
+                    <li class="adventage adventage__subdomain">
                         <img src="../resources/media/images/checkbox.png" alt="checbox" class="adventage__checked"/>
                         5 Subdomains
-                    </p>
-                    <p class="adventage adventage__emails">
+                    </li>
+                    <li class="adventage adventage__emails">
                         <img src="../resources/media/images/checkbox.png" alt="checbox" class="adventage__checked"/>
                         20 E-mails
-                    </p>
-                    <p class="adventage adventage__license">
+                    </li>
+                    <li class="adventage adventage__license">
                         <img src="../resources/media/images/checkbox.png" alt="checbox" class="adventage__checked"/>
                         Two years license
-                    </p>
-                    <p class="adventage adventage__support">
+                    </li>
+                    <li class="adventage adventage__support">
                         <img src="../resources/media/images/checkbox.png" alt="checbox" class="adventage__checked"/>
                         Full support
-                    </p>
-                </div>
+                    </li>
+                </ul>
                 <button class="offer__button offer__button-premium">Begin</button>
             </div>
         </div>
@@ -224,21 +215,22 @@
                     <label for="email" class="main__data-label main__data-label-email">EMAIL</label>
                     <input type="text" class="main__data-input main__data-input-email" id="email" />
                 </div>
-
-                <input type="checkbox" class="main__consent-check" id="consent-check">
+                <div class="main__consent-data">
+                    <input type="checkbox" class="main__consent-check" id="consent-check">
                     <label for="consent-check" class="main__consent-content">
-                    I hereby give consent for my personal data included in my application to be p
-                    rocessed for the purposes of the recruitment process under the European 
-                    Parliament’s and Council of the European Union Regulation on the Protection 
-                    of Natural Persons as of 27 April 2016, with regard to the processing of 
-                    personal data and on the free movement of such data, and repealing Directive 
-                    95/46/EC (Data Protection Directive)
-                </label>
+                        I hereby give consent for my personal data included in my application to be p
+                        rocessed for the purposes of the recruitment process under the European 
+                        Parliament’s and Council of the European Union Regulation on the Protection 
+                        of Natural Persons as of 27 April 2016, with regard to the processing of 
+                        personal data and on the free movement of such data, and repealing Directive 
+                        95/46/EC (Data Protection Directive)
+                    </label>
+                </div>
                 <button class="main__consent-send">Send</button>
             </div>    
         </div>
     </div>
-
+    <i class="fi fi-sr-arrow-circle-up"></i>
     <div id="footer">
         <h4 class="footer__title">OXYGENShop</h4>
         <img src="../resources/media/images/twitter.png" alt="icono de twitter" class="footer__icon footer__icon-twitter" />

@@ -10,6 +10,7 @@ $family-raleway: 'Raleway';
 $family-open-sans: 'Open Sans';
 $blue-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.29);
 $scale-svg-img-1-5: scale(1.5, 1.5);
+$scale-svg-img-2-5: scale(2.5, 2.5);
 $scale-svg-img-2: scale(2, 2);
 $scale-offer: scale(1.1, 1.1);
 
@@ -31,6 +32,21 @@ body{
     margin-bottom: 100px;
 }
 
+
+.header__scroller{
+    border: 2px solid $color-web;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    z-index: 100;
+}
+
+.header__element{
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+
 .header__title,
 .header__icon{
     display: $display-line-block;
@@ -41,15 +57,13 @@ body{
     width: 50%;
     font-family: $family-raleway;
     font-weight: 300;
-    font-size: 32px;
-    line-height: 37px;
+    font-size: 2em;
+    line-height: 2.3em;
 }
 
 //icono de menu
 .header__icon{
-    width: 5%;
-    height: 5%;
-    margin-top: 5%;
+    margin-top: 3em;
     float: right;
     flex-shrink: 0;
 }
@@ -57,18 +71,23 @@ body{
 //lista de menu
 .header__list{
     display: none;
+    list-style-type: none;
+    width: 100%;
 }
 
-
-.header__element{
-    margin: 10px 15px;
-    color: black;    
-    font-size: 11px;
-    font-weight: bold;
-}
 
 .header__element-link{
     text-decoration: none;
+    color: $contact-p-color;
+    font-family: $family-open-sans;
+    font-size: 0.6em;
+    font-weight: 700;
+    line-height: 0.9em;
+    letter-spacing: 0.15em;
+}
+
+.header__element-link:hover{
+    color: black;
 }
 
 #main{
@@ -84,16 +103,16 @@ body{
 
 .opening__section-title{
     font-family: $family-raleway;
-    font-size: 35px;
+    font-size: 2.3em;
     font-weight: 400;
-    line-height: 41px;
+    line-height: 2.5em;
 }
 
 .opening__section-desc{
     font-family: $family-open-sans;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
-    line-height: 23px;
+    line-height: 1.4em;
     width: 90%;
     margin: 5% 5% 10%;
     flex-shrink: 0;
@@ -110,8 +129,8 @@ body{
 
     font-family: $family-open-sans;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 1em;
+    line-height: 1.3em;
     color: white;
 }
 
@@ -123,18 +142,19 @@ body{
 }
 
 .img__background{
-    width: 100%;
+    width: 200%;
     height: auto;
     display: block;
+    transform: translateX(-25%);
 }
 
 .main__title-popularity{
     width: 70%;
     margin: 0% 15%;
     font-family: $family-raleway;
-    line-height: 35px;
+    line-height: 2.1em;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 1.8em;
     flex-shrink: 0;
 }
 
@@ -173,10 +193,10 @@ body{
 
 .data__number{
     font-family: $family-raleway;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 800;
-    line-height: 24px;
-    letter-spacing: 6px;
+    line-height: 1.5em;
+    letter-spacing: .3em;
     width: 80%;
     margin: auto;
     margin-top: 10%;
@@ -185,9 +205,9 @@ body{
 .data__desc{
     color: #A5A5A5;
     font-family: $family-raleway;
-    font-size: 17px;
+    font-size: 1em;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 1.25em;
     width: 70%;
     margin: auto;
     flex-shrink: 0;
@@ -202,27 +222,28 @@ body{
 
 .main__article{
     width: 90%;
-    margin: 5% auto 0;
+    margin: 3em auto 1em;
     padding-bottom: 0;
     background-color: white;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
     text-align: left;
+    padding: 1em;
 }
 
 .article__title{
     width: 80%;
     font-family: "Raleway";
-    font-size: 30px;
+    font-size: 1.8em;
     font-weight: 400;
     margin: 8% 4% 4%;;
 }
 
 .article__desc{
     font-family: $family-open-sans;
-    font-size: 14px;
+    font-size: 0.8em;
     font-weight: 400;
-    line-height: 19px;
+    line-height: 1.1em;
     margin: 5%;
 }
 
@@ -230,17 +251,22 @@ body{
     display: none;
 }
 
-.main__article-imgs{
-    position: relative;
+.main__article-recognition{
+    background-color: #f7f7f7;
+    border: none;
+    padding: 0;
 }
 
-.article__recognition-img{
-    width: 90%;
-    margin: 0 auto;
-    padding: 12% 16% 0 4%;;
-    background-color: #55DFB4;
+.article__recognition-info{
+    background-color: white;
+    margin-bottom: 0;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
+    padding: 1em;
+}
+
+.main__article-imgs{
+    position: relative;
 }
 
 .article__ellipse{
@@ -274,19 +300,19 @@ body{
 
 .main__title-pricing{
     font-family: $family-raleway;
-    font-size: 36px;
+    font-size: 2.25em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 5%;
+    margin-top: 2em;
 }
 
 .main__offer{
-    margin: 10% auto;
-    padding: 2% 3%;
-    flex-shrink: 0;
+    margin: 5em auto;
     position: relative;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .main__offer-basic:hover{
@@ -307,20 +333,12 @@ body{
     transition: transform 1s;
 }
 
-.offer__model, .offer__adventages{
-    display: inline;
-}
-
-.offer__model{
-    float: left;
-}
-
 .offer__price{
     font-family: $family-open-sans;
-    font-size: 46px;
+    font-size: 2.8em;
     font-style: normal;
     font-weight: 300;
-    line-height: 64px;
+    line-height: 1em;
 }
 
 .offer__price-basic{
@@ -336,21 +354,30 @@ body{
 }
 
 .offer__adventages{
-    float: right;
     text-align: left;
+    list-style-type: none;
 }
 
 .adventage{
     position: relative;
     top: 30%;
     margin: 5%;
+    font-family: $family-open-sans;
+    font-weight: 400;
+    font-size: 0.8em;
+    font-style: normal;
+    line-height: normal;
+
+    img{
+        margin-right: .5em;
+    }
 }
 
 .offer__title{
     font-family: $family-raleway;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.5em;
     font-style: normal;
 }
 
@@ -358,17 +385,9 @@ body{
     border: 1px solid $offer-basic-color;
     border-radius: 18px;
     height: 220px;
-    .offer__adventages{
-        width: 60%;
-    }
 
     .adventage{
         margin-top: 10%;
-    }
-
-    .offer__model{
-        margin-left: 8%;
-        margin-top: 20%;
     }
 
     .offer__button-basic{
@@ -382,18 +401,6 @@ body{
     border: 1px solid $offer-pro-color;
     border-radius: 18px;
     height: 220px;
-
-    .offer__adventages{
-        position: absolute;
-        width: 60%;
-        left: 48%;
-        margin-left: 1%;
-    }
-
-    .offer__model{
-        margin-left: .5%;
-        margin-top: 20%;
-    }
 
     .adventage{
         position: relative;
@@ -412,17 +419,6 @@ body{
     border: 1px solid $offer-premium-color;
     border-radius: 18px;
     height: 220px;
-
-    .offer__adventages{
-        position: absolute;
-        width: 60%;
-        left: 48%;
-    }
-
-    .offer__model{
-        margin-left: .5%;
-        margin-top: 20%;
-    }
 
     .adventage{
         position: relative;
@@ -446,7 +442,7 @@ body{
 
     align-content: center;
     font-family: "Open Sans";
-    font-size: 13px;
+    font-size: 0.8em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -455,7 +451,7 @@ body{
 
 .offer__limited{
     font-family: $family-raleway;
-    font-size: 12px;
+    font-size: 0.6em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -472,48 +468,53 @@ body{
     
     color: $color-web;
     font-family: $family-open-sans;
-    font-size: 11px;
+    font-size: 0.6em;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: 3px;
+    letter-spacing: 0.15em;
 }
 
 .main__contact-title{
     font-family: $family-raleway;
-    font-size: 40px;
+    font-size: 2.5em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     float: left;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 
 .main__contact-desc{
     font-family: $family-open-sans;
-    font-size: 16px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 1.3em;
     float: left;
     width: 75%;
     text-align: left;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-bottom: 10%;
 }
 
 .main__contact-forms{
     color: $contact-p-color;
     font-family: $family-open-sans;
-    font-size: 16px;
+    font-size: 1em;
     font-style: normal;
-    font-weight: 600;
-    line-height: 22px;
+    font-weight: 400;
+    line-height: 1.3em;
     display: block;
     float: left;
-    margin-left: 15%;
+    margin-left: 10%;
     width: 75%;
     text-align: left;
+    
+    .contact__icon{
+        position: relative;
+        top: .7em;
+    }
 }
 
 .main__contact-forms-tel{
@@ -538,7 +539,7 @@ body{
     width: 70%;
     color: #707070;
     font-family: "Open Sans";
-    font-size: 12px;
+    font-size: 0.6em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -560,7 +561,7 @@ body{
 
     color: white;
     font-family: $family-open-sans;
-    font-size: 13px;
+    font-size: 0.8em;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -582,10 +583,10 @@ body{
 .footer__title{
     color: $color-web;
     font-family: $family-raleway;
-    font-size: 26px;
+    font-size: 1.6em;
     font-style: normal;
     font-weight: 300;
-    line-height: 30px;
+    line-height: 1.8em;
 }
 
 .footer__rights{
@@ -593,7 +594,7 @@ body{
     font-family: $family-open-sans;
     display: block;
     margin-top: 2%;
-    font-size: 11px;
+    font-size: 0.6em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -616,17 +617,16 @@ body{
     
     .main__article{
         max-width: 305px;
-        //min-width: 377px;
     }
 
     .main__offer{
-        max-width: 275px;
+        max-width: 300px;
         min-width: 245px;
         
     }
 
     .article__recognition-img{
-        max-width: 303px;
+        width: 100%;
     }
 }
 
@@ -635,16 +635,23 @@ body{
 @media only screen and (min-width: 1000px){
 
     body{
-        min-width: 1025px;
+        min-width: 1525px;
     }
     //HEADER
     #header{
-        width: 100%;        
+        width: 100%;      
+    }
+
+    .header__nav{        
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
     }
 
     .header__title{
         display: $display-line-block;
         margin: 1% 5%;
+        width: auto;
     }
 
     .header__icon{
@@ -652,8 +659,9 @@ body{
     }
 
     .header__list{
-        display: inline-block;
-        list-style-type: none;
+        display: initial;
+        margin: 1% 5%;
+        width: auto;
     }
 
     .header__element{
@@ -664,40 +672,59 @@ body{
         text-decoration: none;
         color: $contact-p-color;
         font-family: $family-open-sans;
-        font-size: 11px;
+        font-size: 1em;
         font-weight: 700;
-        line-height: 15px;
-        letter-spacing: 3px;
+        line-height: 2.3em;
+        letter-spacing: 0.15em;
         text-transform: uppercase;
+        padding-bottom: 3em;
+        margin-left: 4em;
     }
 
     .header__element-link:hover{
         color: black;
+        border-bottom: 3px solid $color-web;
     }
 
+    .img__background{
+        width: 107%;
+        height: auto;
+        display: block;
+        transform: translateX(-3.5%);
+    }
 
     //SECTION OPENING
 
     .main__opening-section{
-        margin-bottom: .5%;
+        margin: 5% 15%;
+    }
+
+    .opening__section-title{
+        font-family: $family-raleway;
+        font-weight: 400;
+        font-size: 3em;
+        line-height: 3.5em;
     }
 
     .opening__section-desc{
         font-family: $family-open-sans;
-        font-size: 16px;
+        font-size: 1em;
         font-weight: 400;
-        line-height: 22px;
+        line-height: 1.3em;
         width: 90%;
         margin: 1% 5% 3%;
         flex-shrink: 0;
     }
 
     .opening__section-button-open-shop{
-        width: 25%;
+        width: auto;
+        padding: 1.5em 10em;
         border-radius: 40px;
         box-shadow: 5px 10px 14px 0px #07ACE64A;
-        padding-top: 1%;
-        padding-bottom: 1%;
+        font-family: $family-open-sans;
+        font-size: 1em;
+        font-weight: 700;
+        line-height: 1.3em;
     }
     
 
@@ -705,9 +732,9 @@ body{
         width: 70%;
         margin: 0% 15%;
         font-family: $family-raleway;
-        line-height: 42px;
+        line-height: 2.6em;
         font-weight: 400;
-        font-size: 36px;
+        font-size: 2.25em;
         flex-shrink: 0;
     }
 
@@ -731,19 +758,26 @@ body{
 
 //ARTICLES
     .main__articles{
-        display: grid;
-        grid-template-areas: 
-            "always always always"
-            "shop   shop   shop"
-            "recog  recog  img"
-            ;
-        gap: 2%;
-        margin-top: 5%;        
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        padding: 5%;
+        padding-bottom: 10%;       
     }
 
     .main__article{
         height: 100%;
         max-width: 1353px;
+
+        .article__title{
+            font-size: 2.25em;
+            line-height: 2.6em;
+        }
+
+        .article__desc{
+            font-size: 1em;
+            line-height: 1.3em;
+        }
 
         .article__line{
             display: block;
@@ -751,9 +785,6 @@ body{
     }
 
     .main__article-always{
-        grid-area: always;
-        padding: 2%;
-        min-width: 825px;
         .article__title-always{
             display: inline;
             margin-left: 0;
@@ -766,151 +797,147 @@ body{
             top: 20%;
         }
         .article__always-img{
-            transform: $scale-svg-img-1-5;
-            right: -170%;
-            top: 20%;
+            transform: $scale-svg-img-2-5;
+            left: 10em;
+            top: 10em;
         };
 
         .article__always-ellipse{
-            transform: $scale-svg-img-1-5;
-            left: 215%;
-            bottom: 1.5em;
+            transform: $scale-svg-img-2-5;
+            left: 22em;
+            top: 5em;
         };
 
         .article__desc-always{
             display: block;
-            width: 30%;
-            margin-left: 10.5%;
-            margin-top: 2%;
+            width: 26em;
+            margin-left: 9em;
+            margin-top: 2em;
+            margin-bottom: 4em;
         };
         .article__line{
             border: 2px solid $offer-basic-color;
             width: 18%;
-            margin-left: 10.5%;
+            margin-left: 9em;
+            margin-bottom: 4em;
         }
     }
 
     .main__article-shop{
-        grid-area: shop;        
-        min-width: 825px;
         .article__title-shop{
             display: block;
-            width: 18%;
-            margin-left: 60%;
-            margin-bottom: 2%;
-            margin-top: 2%;
+            width: 8em;
+            margin-left: 22.5em;
+            margin-top: 2em;
+            line-height: 1.5em;
         };
 
         .article__shop-img{
-            transform: $scale-svg-img-1-5;
-            right: 75%;
-            top: 5em;
+            transform: $scale-svg-img-2-5;
+            left: 10em;
+            top: 10em;
         };
 
         .article__shop-ellipse{
             display: inline-block;
-            transform: $scale-svg-img-1-5;
+            transform: $scale-svg-img-2-5;
             position: absolute;
-            left: 10%;
+            left: 8em;
+            margin-top: 9em;
         };
 
         .article__desc-shop{
-            margin: 1%;
-            width: 28%;
-            margin-left: 60%;
+            margin: 1em 1em 4em;
+            margin-left: 51em;
         };
         .article__line{
             border: 2px solid #07ACE6;
-            width: 20%;
-            margin-left: 60%;
-        
+            width: 16em;
+            margin-left: 51em;
+            margin-bottom: 4em;
         }
     }
+
 
     .main__article-recognition{
-        display: inline-block;
-        margin: 8% 7.5% 0;
-        max-width: 800px;
-        grid-area: recog;
-        height: auto;
+        display: flex;
+        background-color: #F7F7F7;
+        border: none;
 
-        .article__title-recognition{
-            width: 35%;
-            font-family: $family-raleway;
-            font-size: 30px;
-            font-weight: 400;
-        };
-    
-        .article__desc-recognition{
-            margin: 1% 3%;
-            width: 40%;
-        };
-        .article__line{
-            border: 2px solid $offer-premium-color;
-            width: 30%;
-            margin: 3%;
+        .article__recognition-info{
+            margin-right: 5%;
+            background-color: white;
+            .article__title-recognition{
+                width: 10em;
+                font-family: $family-raleway;
+                font-size: 1.8em;
+                font-weight: 400;
+                line-height: normal
+            };
+        
+            .article__desc-recognition{
+                margin: 1em 2em 4em;
+                width: 53%;
+            };
+            .article__line{
+                border: 2px solid $offer-premium-color;
+                width: 30%;
+                margin: 4em 2em;
+            }
         }
+
+        
     }
-    .article__recognition-img{
-        max-width: 400px;
-        position: relative;
-        top: 28%;
-        right: 13%;
-        padding: 25% 16% 0 4%;
-        background-color: #55DFB4;
-        border: 1px solid #E8E9ED;
-        border-radius: 5px;
-        grid-area: img;
-    };
 
 //CSS PARA LAS OFERTAS
     .main__offer{
         display: inline-flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         width: 18%;
         height: auto;
-        padding-bottom: 4%;
         margin: 2.5%;
-        min-width: 210px;
-        max-width: 356px;
+        padding: 2em;
+    }
+
+    .main__title-pricing{
+        line-height: 2.6em;
+    }
+
+    .adventage{
+        font-size: 0.8em;
+        font-weight: 400;
+        font-family: 'Open Sans';
     }
 
     .main__offer-basic{
+        padding: 2.4em;
         .offer__title{
             display: block;
-            position: relative;
-            left: 140%;
-            bottom: 20%;
         }
 
         .offer__price{
             display: block;
-            position: relative;
-            left: 140%;
-            bottom: 20%;
         }
 
         .offer__adventages{
-            height: auto;
-            position: relative;
             text-align: center;
-            top: 4em;
-            right: 40%;
-            margin-bottom: 50%;
 
             .adventage{
-                width: 175%;
-                margin: 10% 5%;
+                margin: 20% 0;
             }
         }
 
         .offer__button{
             display: block;
+            width: auto;
             padding-top: 3%;
             padding-bottom: 3%;
-            height: 10%;
+            height: 4em;
             top: 95%;
+            left: 30%;
+            padding-left: 15%;
+            padding-right: 15%;
         }
 
     }
@@ -918,44 +945,30 @@ body{
     .main__offer-pro{
         .offer__title{
             display: block;
-            position: relative;
-            left: 50%;
-            bottom: 20%;
         }
 
         .offer__price{
             display: block;
-            position: relative;
-            left: 50%;
-            bottom: 20%;
-        }
-
-        .offer__limited{
-            display: block;
-            position: relative;
-            left: 50%;
-            bottom: 20%;
         }
 
         .offer__adventages{
-            height: auto;
-            position: relative;
             text-align: center;
-            top: 4em;
-            left: -45%;
-            margin-bottom: 55%;
 
             .adventage{
-                width: 175%;
+                margin: 20% 0;
             }
         }
 
         .offer__button{
             display: block;
+            width: auto;
             padding-top: 3%;
             padding-bottom: 3%;
-            height: 10%;
+            height: 4em;
             top: 95%;
+            left: 30%;
+            padding-left: 15%;
+            padding-right: 15%;
         }
 
     }
@@ -963,44 +976,34 @@ body{
     .main__offer-premium{
         .offer__title{
             display: block;
-            position: relative;
-            left: 80%;
-            bottom: 20%;
         }
 
         .offer__price{
             display: block;
-            position: relative;
-            left: 80%;
-            bottom: 20%;
         }
 
         .offer__limited{
             display: block;
-            position: relative;
-            left: 80%;
-            bottom: 20%;
         }
 
         .offer__adventages{
-            height: auto;
-            position: relative;
             text-align: center;
-            top: 4em;
-            left: -45%;
-            margin-bottom: 48%;
 
             .adventage{
-                width: 175%;
+                margin: 20% 0;
             }
         }
 
         .offer__button{
             display: block;
+            width: auto;
             padding-top: 3%;
             padding-bottom: 3%;
-            height: 10%;
+            height: 4em;
             top: 95%;
+            left: 30%;
+            padding-left: 15%;
+            padding-right: 15%;
         }
 
     }
@@ -1009,15 +1012,15 @@ body{
     .info__section{
         display: inline-block;
         width: 30%;
-        margin-right: 5%;
-        margin-bottom: 7%;
+        margin-bottom: 2%;
         min-width: 456px;
+        max-width: 541px;
     }
 
     .main__contact-title{
         margin-top: 5%;
-        margin-left: 32%;
-        font-size: 49px;
+        font-size: 3em;
+        line-height: 3.5em;
     }
 
     .main__contact-data{
@@ -1028,28 +1031,41 @@ body{
         display: block;
         margin-top: 4%;
         margin-bottom: 4%;
-        margin-left: 32%;
         width: auto;
+        line-height: 1em;
     }
 
     .main__contact-forms{
-        margin-left: 32%;
         width: auto;
     }
 
     .main__contact-forms-tel{
         margin-left: 2%;
     }
+
+    .main__consent-data{
+        display: flex;
+        justify-content: center;
+    }
     
     .consent__section{
         display: inline-block;
+        right: 20%;
         width: 30%;
-        margin-left: 5%;
+    }
+
+    .main__consent-send{
+        width: auto;
+        font-family: $family-open-sans;
+        font-weight: 700;
+        font-size: 0.8em;
+        padding: 1em 8em;
     }
 
     .main__consent-check{
         position: initial;
-        transform: translate(-150%, -750%);
+        margin-right: 5%;
+        margin-bottom: 5%;
     }
  
     
@@ -1069,17 +1085,17 @@ body{
         display: inline-block;
         color: $color-web;
         font-family: $family-raleway;
-        font-size: 26px;
+        font-size: 1.6em;
         font-style: normal;
         font-weight: 300;
-        line-height: 30px;
+        line-height: 1.8em;
         margin-bottom: 1%;
     }
 
     .footer__rights{
         color: $contact-p-color;
         font-family: $family-open-sans;
-        font-size: 11px;
+        font-size: 0.6em;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
