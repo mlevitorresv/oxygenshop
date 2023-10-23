@@ -332,6 +332,7 @@ body {
 .offer__adventages {
   text-align: left;
   list-style-type: none;
+  margin-bottom: 1.5em;
 }
 
 .adventage {
@@ -480,7 +481,7 @@ body {
 }
 .main__contact-forms .contact__icon {
   position: relative;
-  top: 0.5em;
+  top: 0.7em;
 }
 
 .main__contact-forms-tel {
