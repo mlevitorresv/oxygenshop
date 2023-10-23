@@ -47,6 +47,7 @@ const showPercentageScroll = () =>{
     //% QUE HEMOS BAJADO
     posScroll = Math.round(window.scrollY / (bodyHeight - windowHeight) *100);
     scroller.style.width = posScroll + "%";
+    console.log(posScroll + '%')
 }
 
 //RETURN TO THE TOP
@@ -77,13 +78,7 @@ const validEmail = (e) => {
 
 //DATA SEND
 const sendData = () => {
-    if(!validName){
-        inputName.style.borderColor = "red";
-    }else if(!validEmail(inputEmail)){
-        inputEmail.style.borderColor = "red";
-    }else if(!inputCheck.checked){
-        inputCheck.style.borderColor = "red";
-    }else{
+    if(validName() && validEmail(inputEmail) && inputCheck.checked){
         fetch(urlPOST, {
             method: 'POST',
             body: JSON.stringify({
@@ -97,6 +92,10 @@ const sendData = () => {
         .then(response => response.json())
         .then(json => console.log(json))
         .catch(err => console.log(err));
+    }else{
+        inputName.style.borderColor = "red";
+        inputEmail.style.borderColor = "red";
+        inputCheck.style.borderColor = "red";
     }
     
 }
@@ -218,11 +217,10 @@ const convertCoin = (c) => {
 
 
 burgerMenu.onclick = handleMenu;
-window.onscroll = showPercentageScroll;
-window.onscroll = openScrollModal;;
+window.onscroll = showPercentageScroll, openScrollModal;
 btGoTop.onclick = goTop;
 inputName.oninput = validName;
-inputEmail.oninput = validEmail;
+inputEmail.oninput = validEmail(inputEmail);
 dataSend.onclick = sendData;
 window.onload = showModal;
 btCloseModal.onclick = closeModal;
