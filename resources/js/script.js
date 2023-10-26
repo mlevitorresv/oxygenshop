@@ -2,7 +2,7 @@ let scroller = document.getElementById("scroller");
 let burgerMenu = document.getElementById("burgerMenu");
 let menu = document.getElementById("headerList");
 let menuOpen = false;
-let btGoTop = document.getElementById("goTop");
+let btGoTop = document.getElementById("goTopButton");
 let inputName = document.getElementById("name");
 let inputEmail = document.getElementById("email");
 let inputCheck = document.getElementById("consent-check");
@@ -47,11 +47,11 @@ const showPercentageScroll = () =>{
     //% QUE HEMOS BAJADO
     posScroll = Math.round(window.scrollY / (bodyHeight - windowHeight) *100);
     scroller.style.width = posScroll + "%";
-    console.log(posScroll + '%')
 }
 
 //RETURN TO THE TOP
 const goTop = ()=>{
+    document.documentElement.style.scrollBehavior = 'smooth';
     setTimeout(window.scrollTo(0, 0), 200);
 }
 
@@ -76,6 +76,16 @@ const validEmail = (e) => {
     }
 }
 
+const validCheck = () => {
+    if(!inputCheck.checked){
+        inputCheck.style.outline = '1px solid red';
+        return false;
+    }else{
+        inputCheck.style.outline = '';
+        return true;
+    }
+}
+
 //DATA SEND
 const sendData = () => {
     if(validName() && validEmail(inputEmail) && inputCheck.checked){
@@ -90,14 +100,16 @@ const sendData = () => {
             },
         })
         .then(response => response.json())
-        .then(json => console.log(json))
+        .then(json => {
+            alert('datos enviados correctamente')
+            console.log(json)
+        })
         .catch(err => console.log(err));
     }else{
-        inputName.style.borderColor = "red";
-        inputEmail.style.borderColor = "red";
-        inputCheck.style.borderColor = "red";
-    }
-    
+        validEmail(inputEmail);
+        validName();
+        validCheck();
+    }    
 }
 
 
@@ -219,8 +231,9 @@ const convertCoin = (c) => {
 burgerMenu.onclick = handleMenu;
 window.onscroll = showPercentageScroll, openScrollModal;
 btGoTop.onclick = goTop;
-inputName.oninput = validName;
-inputEmail.oninput = validEmail(inputEmail);
+inputName.onchange =  () => validName();
+inputEmail.onchange = () => validEmail(inputEmail);
+inputCheck.onchange = () => validCheck();
 dataSend.onclick = sendData;
 window.onload = showModal;
 btCloseModal.onclick = closeModal;

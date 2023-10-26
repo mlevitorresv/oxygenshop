@@ -70,7 +70,7 @@ body {
 }
 
 .header__scroller {
-  border: 2px solid #08A6E4;
+  border: 5px solid #08A6E4;
   position: fixed;
   top: 0;
   left: 0;
@@ -643,9 +643,16 @@ body {
   line-height: normal;
 }
 
-.fi {
-  margin-left: 95%;
-  animation-timing-function: linear;
+.goTop {
+  position: relative;
+  left: 2em;
+  top: 8em;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.goTop:hover {
+  cursor: pointer;
 }
 
 #footer {
@@ -1055,6 +1062,9 @@ body {
     position: initial;
     margin-right: 5%;
     margin-bottom: 5%;
+  }
+  .goTop {
+    top: 0;
   }
   #footer {
     height: 8%;
