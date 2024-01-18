@@ -163,6 +163,12 @@ body {
   font-size: 1em;
   line-height: 1.3em;
   color: white;
+
+  &:hover{
+    color: #08A6E4;
+    background-color: white;
+    transition: all 1s ease;
+  }
 }
 
 .main__img {
