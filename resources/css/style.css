@@ -650,11 +650,12 @@ body {
 }
 
 .goTop {
-  position: relative;
-  left: 2em;
-  top: 8em;
+  position: sticky;
+  left: 90%;
+  top: 70%;
   font-weight: bold;
   font-style: normal;
+  font-size: 30px;
 }
 
 .goTop:hover {
@@ -1068,9 +1069,6 @@ body {
     position: initial;
     margin-right: 5%;
     margin-bottom: 5%;
-  }
-  .goTop {
-    top: 0;
   }
   #footer {
     height: 8%;
